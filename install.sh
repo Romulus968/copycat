@@ -56,7 +56,7 @@
 	WHS="\033[1;37m"
 
 sleep 1
-echo
+echo  ""
 echo  ""                                    _      ""
 echo  ""                                   | |     ""
 echo  ""     ___ ___  _ __  _   _  ___ __ _| |_    ""
@@ -65,7 +65,7 @@ echo  ""   | (_| (_) | |_) | |_| | (_| (_| | |_    ""
 echo  ""    \___\___/| .__/ \__, |\___\__,_|\__|   ""
 echo  ""             | |     __/ |                 ""
 echo  ""             |_|    |___/   Toolkit v1.0   ""             
-echo 
+echo  ""
 
 if [[ -f /usr/local/bin/shodan ]]
 then
