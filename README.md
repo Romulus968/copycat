@@ -114,10 +114,10 @@
 > copycat download tomcat tomcat
 
     Search query:			    tomcat
-    Total number of results:    77601
-    Query credits left:		    197673
+    Total number of results:                77601
+    Query credits left:		            197673
     Output file:			    tomcat.json.gz
-      [###################################-]   99%  00:00:00
+      [####################################]  100%  00:00:00
     Saved 1000 results into file tomcat.json.gz
     
 # MIT copycat license
