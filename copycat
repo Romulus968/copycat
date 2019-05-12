@@ -69,7 +69,7 @@ sleep 0.5
      fi
 else
      sleep 0.5
-     echo -e ""$BS"Installing dependences..."$CE""
+     echo  ""$BS"Installing dependences..."$CE""
      {
      pip install shodan
      } &> /dev/null
@@ -97,7 +97,7 @@ sleep 0.5
      fi
 else
      sleep 0.5
-     echo -e ""$BS"Installing dependences..."$CE""
+     echo  ""$BS"Installing dependences..."$CE""
      {
      pip install shodan
      } &> /dev/null
@@ -107,19 +107,19 @@ SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
 shodan init "$SHO"
 } &> /dev/null
 fi
-echo -e
-echo -e "Usage: copycat [OPTION...]"
-echo -e "Copyright (C) 2019, Anna Fet. All Rights Reserved."
-echo -e
-echo -e  "   host     <host>                View host or IP."
-echo -e  "   download <filename> <server>   Download server databases."
-echo -e  "   parse    <filename>            Parse downloaded server database."
-echo -e  "   explore  <organization>        Explore organization name results."                   
-echo -e  "   honeypot <host>                Check whether the IP is a honeypot or not."
-echo -e  "   stream                         Stream internat data in real-time."
-echo -e  "   radar                          [Shodan] Shodan real-time results."
-echo -e  "   help                           Give this help list."
-echo -e
+echo 
+echo  "Usage: copycat [OPTION...]"
+echo  "Copyright (C) 2019, Anna Fet. All Rights Reserved."
+echo 
+echo   "   host     <host>                View host or IP."
+echo   "   download <filename> <server>   Download server databases."
+echo   "   parse    <filename>            Parse downloaded server database."
+echo   "   explore  <organization>        Explore organization name results."                   
+echo   "   honeypot <host>                Check whether the IP is a honeypot or not."
+echo   "   stream                         Stream internat data in real-time."
+echo   "   radar                          [Shodan] Shodan real-time results."
+echo   "   help                           Give this help list."
+echo 
 exit
 
 elif [[ "$1" = "host" ]]
@@ -139,7 +139,7 @@ sleep 0.5
      fi
 else
      sleep 0.5
-     echo -e ""$BS"Installing dependences..."$CE""
+     echo  ""$BS"Installing dependences..."$CE""
      {
      pip install shodan
      } &> /dev/null
@@ -151,7 +151,7 @@ shodan init "$SHO"
 fi
 SAS="$2"
 clear
-echo -e ""$BS"Please wait..."$CE""
+echo  ""$BS"Please wait..."$CE""
 shodan host "$SAS"
 exit
 
@@ -172,7 +172,7 @@ sleep 0.5
      fi
 else
      sleep 0.5
-     echo -e ""$BS"Installing dependences..."$CE""
+     echo  ""$BS"Installing dependences..."$CE""
      {
      pip install shodan
      } &> /dev/null
@@ -204,7 +204,7 @@ sleep 0.5
      fi
 else
      sleep 0.5
-     echo -e ""$BS"Installing dependences..."$CE""
+     echo  ""$BS"Installing dependences..."$CE""
      {
      pip install shodan
      } &> /dev/null
@@ -235,7 +235,7 @@ sleep 0.5
      fi
 else
      sleep 0.5
-     echo -e ""$BS"Installing dependences..."$CE""
+     echo  ""$BS"Installing dependences..."$CE""
      {
      pip install shodan
      } &> /dev/null
@@ -266,7 +266,7 @@ sleep 0.5
      fi
 else
      sleep 0.5
-     echo -e ""$BS"Installing dependences..."$CE""
+     echo  ""$BS"Installing dependences..."$CE""
      {
      pip install shodan
      } &> /dev/null
@@ -296,7 +296,7 @@ sleep 0.5
      fi
 else
      sleep 0.5
-     echo -e ""$BS"Installing dependences..."$CE""
+     echo  ""$BS"Installing dependences..."$CE""
      {
      pip install shodan
      } &> /dev/null
@@ -325,7 +325,7 @@ sleep 0.5
      fi
 else
      sleep 0.5
-     echo -e ""$BS"Installing dependences..."$CE""
+     echo  ""$BS"Installing dependences..."$CE""
      {
      pip install shodan
      } &> /dev/null
