@@ -83,9 +83,9 @@ spinner()
       printf "\b\b\b\b\b\b" 
      done 
     } 
-{
+
 pip install shodan
-} &> /dev/null
+
 sleep 0.5
 SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
 {
