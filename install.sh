@@ -62,7 +62,6 @@ cp copycat /usr/local/bin
 chmod +x /usr/local/bin/copycat
 cp copycat-map /usr/local/bin
 chmod +x /usr/local/bin/copycat-map
-echo
 else
 cd ~
 git clone https://github.com/entynetproject/copycat.git
@@ -71,7 +70,6 @@ cp copycat /usr/local/bin
 chmod +x /usr/local/bin/copycat
 cp copycat-map /usr/local/bin
 chmod +x /usr/local/bin/copycat-map
-echo
 fi
 sleep 0.5
 echo  
