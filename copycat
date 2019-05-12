@@ -120,6 +120,7 @@ echo   "   honeypot <host>                Check whether the IP is a honeypot or 
 echo   "   stream                         Stream internat data in real-time."
 echo   "   radar                          Copycat real-time results."
 echo   "   update                         Update copycat toolkit."
+echo   "   info                           View information about copycat toolkit."
 echo   "   help                           Give this help list."
 echo 
 exit
@@ -352,6 +353,10 @@ chmod +x install.sh
 ./install.sh
 } &> /dev/null
 
+elif [[ "$1" = "info" ]]
+then
+
+
 fi
 
 sleep 1
@@ -367,6 +372,7 @@ echo   "   honeypot <host>                Check whether the IP is a honeypot or 
 echo   "   stream                         Stream internat data in real-time."
 echo   "   radar                          Copycat real-time results."
 echo   "   update                         Update copycat toolkit."
+echo   "   info                           View information about copycat toolkit."
 echo   "   help                           Give this help list."
 echo 
 exit
