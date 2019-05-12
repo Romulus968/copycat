@@ -116,7 +116,7 @@ echo  " / __/ _ \| '_ \| | | |/ __/ _` | __|
 echo  "| (_| (_) | |_) | |_| | (_| (_| | |_ 
 echo  " \___\___/| .__/ \__, |\___\__,_|\__|
 echo  "          | |     __/ |              
-echo  "          |_|    |___/               
+echo  "          |_|    |___/   Toolkit v1.0             
 echo 
 echo  "Usage: copycat [OPTION...]"
 echo  "Copyright (C) 2019, Anna Fet. All Rights Reserved."
@@ -372,7 +372,7 @@ echo  " / __/ _ \| '_ \| | | |/ __/ _` | __|
 echo  "| (_| (_) | |_) | |_| | (_| (_| | |_ 
 echo  " \___\___/| .__/ \__, |\___\__,_|\__|
 echo  "          | |     __/ |              
-echo  "          |_|    |___/               
+echo  "          |_|    |___/   Art by DJ Mobley            
 echo  
 echo  "   Name     : Copycat Toolki"
 echo  "   Author   : Anna Fet, Ivan Nikolsky"
@@ -394,7 +394,7 @@ echo  " / __/ _ \| '_ \| | | |/ __/ _` | __|
 echo  "| (_| (_) | |_) | |_| | (_| (_| | |_ 
 echo  " \___\___/| .__/ \__, |\___\__,_|\__|
 echo  "          | |     __/ |              
-echo  "          |_|    |___/               
+echo  "          |_|    |___/   Toolkit v1.0             
 echo 
 echo  "Usage: copycat [OPTION...]"
 echo  "Copyright (C) 2019, Anna Fet. All Rights Reserved."           
