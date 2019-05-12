@@ -376,6 +376,7 @@ echo  "          |_|    |___/
 echo  
 echo  "   Name     : Copycat Toolki"
 echo  "   Author   : Anna Fet, Ivan Nikolsky"
+echo  "   Version  : v1.0 (first release)
 echo  "   Database : Shodan (https://shodan.io/)"
 echo  "   Site     : https://entynetproject.simplesite.com/"
 echo  "   API      : Automate Shodan API"
