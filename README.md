@@ -9,7 +9,37 @@
               |_|    |___/   Art By DJ Mobley           
 
 # Copycat toolkit credits
-    
+
+<p align="center">
+  <a href="http://entynetproject.simplesite.com/">
+    <img src="https://img.shields.io/badge/entynetproject-Ivan%20Nikolsky-blue.svg">
+  </a>
+  <a href="http://entynetproject.simplesite.com/">
+      <img src="https://img.shields.io/badge/entynetproject-Anna%20Fet-red.svg">
+  </a> 
+  <a href="https://github.com/entynetproject/copycat/releases">
+    <img src="https://img.shields.io/github/release/entynetproject/copycat.svg">
+  </a>
+  <a href="http://entynetproject.simplesite.com/">
+    <img src="https://img.shields.io/badge/site-entynetproject-green.svg?maxAge=2592000">
+  </a>
+  <a href="https://ru.m.wikipedia.org/wiki/Python">
+    <img src="https://img.shields.io/badge/language-python-blue.svg">
+ </a>
+  <a href="https://shodan.io/">
+      <img src="https://img.shields.io/badge/database-shodan-red.svg?maxAge=2592000">
+ </a>
+  <a href="https://github.com/entynetproject/copycat/issues?q=is%3Aissue+is%3Aclosed">
+      <img src="https://img.shields.io/github/issues/entynetproject/copycat.svg">
+  </a>
+  <a href="https://github.com/entynetproject/ECLI">
+      <img src="https://img.shields.io/badge/files-5-red.svg?maxAge=2592000">
+  </a>
+  <a href="https://github.com/entynetproject/ECLI/wiki">
+      <img src="https://img.shields.io/badge/wiki%20-copycat-lightgrey.svg">
+ </a>
+</p>
+   
     Name     : Copycat Toolkit 
     Author   : Anna Fet, Ivan Nikolsky
     Database : Shodan (https://shodan.io/)
