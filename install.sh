@@ -57,15 +57,8 @@
 
 sleep 1
 echo  
-printlf  "                                    _      "
-printlf  "                                   | |     "
-printlf  "     ___ ___  _ __  _   _  ___ __ _| |_    "
-printlf  "    / __/ _ \| '_ \| | | |/ __/ _` | __|   "
-printlf  "   | (_| (_) | |_) | |_| | (_| (_| | |_    "
-printlf  "    \___\___/| .__/ \__, |\___\__,_|\__|   "
-printlf  "             | |     __/ |                 "
-printlf  "             |_|    |___/   Toolkit v1.0   "            
-printlf 
+cat banner/banner.txt
+echo
 
 if [[ -f /usr/local/bin/shodan ]]
 then
