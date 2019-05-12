@@ -118,6 +118,7 @@ echo   "   explore  <organization>        Explore organization name results."
 echo   "   honeypot <host>                Check whether the IP is a honeypot or not."
 echo   "   stream                         Stream internat data in real-time."
 echo   "   radar                          Copycat real-time results."
+echo   "   update                         Update copycat toolkit."
 echo   "   help                           Give this help list."
 echo 
 exit
@@ -335,5 +336,19 @@ shodan init "$SHO"
 } &> /dev/null
 fi
 copycat-map
+
+elif [[ "$1" = "update" ]]
+then
+echo ""$BS"Installing update..."$CE""
+{
+rm -r ~/copycat
+rm /usr/local/bin/copycat
+rm /usr/local/bin/copycat-map
+cd ~
+git clone https://github.com/entynetproject/copycat.git
+cd copycat
+chmod +x install.sh
+./install.sh
+} &> /dev/null
 
 fi
