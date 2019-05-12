@@ -20,10 +20,16 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-if [[ -d copycat ]]
+if [[ -d ~/copycat ]]
 then
-sleep 0.5
+cp copycat /usr/local/bin
+chmod +x /usr/local/bin/copycat
+cp copycat-map /usr/local/bin
+chmod +x /usr/local/bin/copycat-map
 else
+cd ~
+git clone https://github.com/entynetproject/copycat.git
+cd  ~/copycat
 cp copycat /usr/local/bin
 chmod +x /usr/local/bin/copycat
 cp copycat-map /usr/local/bin
