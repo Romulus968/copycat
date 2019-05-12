@@ -20,15 +20,111 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-                                 _   
-                                | | 
-  ___ ___  _ __  _   _  ___ __ _| |_ 
- / __/ _ \| '_ \| | | |/ __/ _` | __|
-| (_| (_) | |_) | |_| | (_| (_| | |_ 
- \___\___/| .__/ \__, |\___\__,_|\__|
-          | |     __/ |              
-          |_|    |___/   Toolkit v1.0           
+#yellow start 
+	YS="\033[1;33m"
+#blue start 
+	BS="\033[0;34m"
+#color end
+	CE="\033[0m"
+#red start
+	RS="\033[6;31m"
+#black start
+	BLS="\033[0;30m"
+#dark gray start
+	DGYS="\033[1;30m"
+#light blue start
+	LBS="\033[1;34m"
+#green start
+	GNS="\033[0;32m"
+#light green start
+	LGNS="\033[1;32m"
+#cyan start
+	CYS="\033[0;36m"
+#light cyan start
+	LCYS="\033[1;36m"
+#light red start
+	DRS="\033[0;31m"
+#purple start
+	PS="\033[0;35m"
+#light purple start
+	LPS="\033[1;35m"
+#brown start
+	BRS="\033[0;33m"
+#light gray start
+	LGYS="\033[0;37m"
+#white start
+	WHS="\033[1;37m"
 
+sleep 1
+echo
+echo  "                                 _   
+echo  "                                | |  
+echo  "  ___ ___  _ __  _   _  ___ __ _| |_ 
+echo  " / __/ _ \| '_ \| | | |/ __/ _` | __|
+echo  "| (_| (_) | |_) | |_| | (_| (_| | |_ 
+echo  " \___\___/| .__/ \__, |\___\__,_|\__|
+echo  "          | |     __/ |              
+echo  "          |_|    |___/   Toolkit v1.0             
+echo 
+
+if [[ -f /usr/local/bin/shodan ]]
+then
+sleep 0.5
+     if [[ -f ~/.shodan/api_key ]]
+     then
+     sleep 0.5
+     else
+     sleep 0.5
+     SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+     {
+     shodan init "$SHO"
+     } &> /dev/null
+     fi
+else
+     sleep 0.5
+     echo  ""$BS"Connecting to database..."$CE""
+     sleep 1
+     echo  ""$BS"Installing dependences..."$CE""
+     sleep 1
+     echo  ""$BS"Fixing permissions..."$CE""
+     {
+     pip install shodan
+     } &> /dev/null
+sleep 0.5
+SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+{
+shodan init "$SHO"
+} &> /dev/null
+fi
+
+if [[ "$1" = "help" ]]
+then
+if [[ -f /usr/local/bin/shodan ]]
+then
+sleep 0.5
+     if [[ -f ~/.shodan/api_key ]]
+     then
+     sleep 0.5
+     else
+     sleep 0.5
+     SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+     {
+     shodan init "$SHO"
+     } &> /dev/null
+     fi
+else
+     sleep 0.5
+     echo  ""$BS"Installing dependences..."$CE""
+     {
+     pip install shodan
+     } &> /dev/null
+sleep 0.5
+SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+{
+shodan init "$SHO"
+} &> /dev/null
+fi
+sleep 1           
 if [[ -d ~/copycat ]]
 then
 cd  ~/copycat
@@ -36,6 +132,7 @@ cp copycat /usr/local/bin
 chmod +x /usr/local/bin/copycat
 cp copycat-map /usr/local/bin
 chmod +x /usr/local/bin/copycat-map
+echo
 else
 cd ~
 git clone https://github.com/entynetproject/copycat.git
@@ -44,4 +141,5 @@ cp copycat /usr/local/bin
 chmod +x /usr/local/bin/copycat
 cp copycat-map /usr/local/bin
 chmod +x /usr/local/bin/copycat-map
+echo
 fi
