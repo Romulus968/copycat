@@ -94,6 +94,7 @@ echo -e  "   download <filename> <server>   Download server databases."
 echo -e  "   parse    <filename>            Parse downloaded server database."
 echo -e  "   explore  <organization>        Explore organization name results."                   
 echo -e  "   honeypot <host>                Check whether the IP is a honeypot or not."
+echo -e  "   stream                         Stream data in real-time.
 echo -e  "   help                           Give this help list."
 echo -e
 exit
@@ -101,6 +102,7 @@ exit
 elif [[ "$1" = "host" ]]
 then
 SAS="$2"
+echo -e ""$BS"Please wait..."$CE""
 shodan host "$SAS"
 exit
 
@@ -127,6 +129,10 @@ elif [[ "$1" = "honeypot" ]]
 then
 SAS="$2"
 shodan honeyscore "$SAS"
+
+elif [[ "$1" = "stream" ]]
+then
+shodan stream
 
 fi
 
