@@ -56,7 +56,8 @@
 	WHS="\033[1;37m"
 
 echo
-cat banner/banner.txt            
+cd ~/copycat
+cat banner/banner.txt          
 echo 
 sleep 0.5
 echo  ""$RS"Uninstalling Copycat Toolkit..."$CE""
