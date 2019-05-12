@@ -83,6 +83,8 @@ shodan init "$SHO"
 exit
 fi
 
+if [[ "$1" = "help" ]]
+then
 
 echo -e ""$BS"Please wait..."$CE""
 	A1="$1"
