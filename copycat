@@ -64,10 +64,10 @@ clear
 else
 clear
 sleep 1
-echo -n "(API)>"
-read -p $' ' SHO
+SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+{
 shodan init "$SHO"
-exit
+} &> /dev/null
 fi
 else
 clear
@@ -89,10 +89,10 @@ pip install shodan
 } &> /dev/null
 sleep 1
 clear
-echo -n "(API)>"
-read -p $' ' SHO
+SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+{
 shodan init "$SHO"
-exit
+} &> /dev/null
 fi
 
 if [[ "$1" = "help" ]]
@@ -106,7 +106,8 @@ echo -e  "   download <filename> <server>   Download server databases."
 echo -e  "   parse    <filename>            Parse downloaded server database."
 echo -e  "   explore  <organization>        Explore organization name results."                   
 echo -e  "   honeypot <host>                Check whether the IP is a honeypot or not."
-echo -e  "   stream                         Stream data in real-time."
+echo -e  "   stream                         Stream internat data in real-time."
+echo -e  "   radar                          [Shodan] Shodan real-time results."
 echo -e  "   help                           Give this help list."
 echo -e
 exit
@@ -146,11 +147,8 @@ elif [[ "$1" = "stream" ]]
 then
 shodan stream
 
+elif [[ "$1" = "radar" ]]
+then
+shodan radar
+
 fi
-
-
-echo -e ""$BS"Please wait..."$CE""
-	A1="$1"
-		
-		shodan host "$A1"
-                exit
