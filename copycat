@@ -88,5 +88,4 @@ echo -e ""$BS"Please wait..."$CE""
 	A1="$1"
 		
 		shodan host "$A1"
-		echo -e 
                 exit
