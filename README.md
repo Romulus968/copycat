@@ -41,7 +41,7 @@
 # Copycat toolkit credits
    
     Name     : Copycat Toolkit 
-    Author   : Anna Fet, Ivan Nikolsky
+    Author   : Entynetproject (Ivan Nikolsky, Anna Fet)
     Version  : v1.0 (first release)
     Database : Shodan (https://shodan.io/)
     Site     : https://entynetproject.simplesite.com/
