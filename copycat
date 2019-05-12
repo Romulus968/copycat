@@ -108,6 +108,15 @@ shodan init "$SHO"
 } &> /dev/null
 fi
 sleep 1
+echo
+echo  "                                 _   
+echo  "                                | |  
+echo  "  ___ ___  _ __  _   _  ___ __ _| |_ 
+echo  " / __/ _ \| '_ \| | | |/ __/ _` | __|
+echo  "| (_| (_) | |_) | |_| | (_| (_| | |_ 
+echo  " \___\___/| .__/ \__, |\___\__,_|\__|
+echo  "          | |     __/ |              
+echo  "          |_|    |___/               
 echo 
 echo  "Usage: copycat [OPTION...]"
 echo  "Copyright (C) 2019, Anna Fet. All Rights Reserved."
@@ -355,7 +364,16 @@ chmod +x install.sh
 
 elif [[ "$1" = "info" ]]
 then
-echo 
+echo
+echo  "                                 _   
+echo  "                                | |  
+echo  "  ___ ___  _ __  _   _  ___ __ _| |_ 
+echo  " / __/ _ \| '_ \| | | |/ __/ _` | __|
+echo  "| (_| (_) | |_) | |_| | (_| (_| | |_ 
+echo  " \___\___/| .__/ \__, |\___\__,_|\__|
+echo  "          | |     __/ |              
+echo  "          |_|    |___/               
+echo  
 echo  "   Name     : Copycat Toolki"
 echo  "   Author   : Anna Fet, Ivan Nikolsky"
 echo  "   Database : Shodan (https://shodan.io/)"
@@ -367,10 +385,19 @@ exit
 fi
 
 sleep 1
+echo
+echo  "                                 _   
+echo  "                                | |  
+echo  "  ___ ___  _ __  _   _  ___ __ _| |_ 
+echo  " / __/ _ \| '_ \| | | |/ __/ _` | __|
+echo  "| (_| (_) | |_) | |_| | (_| (_| | |_ 
+echo  " \___\___/| .__/ \__, |\___\__,_|\__|
+echo  "          | |     __/ |              
+echo  "          |_|    |___/               
 echo 
 echo  "Usage: copycat [OPTION...]"
-echo  "Copyright (C) 2019, Anna Fet. All Rights Reserved."
-echo 
+echo  "Copyright (C) 2019, Anna Fet. All Rights Reserved."           
+echo  
 echo   "   host     <host>                View host or IP."
 echo   "   download <filename> <server>   Download server databases."
 echo   "   parse    <filename>            Parse downloaded server database."
