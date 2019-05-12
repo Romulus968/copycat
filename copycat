@@ -89,10 +89,11 @@ echo -e
 echo -e "Usage: copycat [OPTION...]"
 echo -e "Copyright (C) 2019, Anna Fet. All Rights Reserved."
 echo -e
-echo -e  "    host     <host>                View host or IP."
-echo -e  "    download <filename> <server>   Download server access list."
-echo -e  "    explore  <organization>        Explore organization name results."                   
-echo -e  "    help                           Give this help list."
+echo -e  "   host     <host>                View host or IP."
+echo -e  "   download <filename> <server>   Download server databases."
+echo -e  "   parse    <filename>            Parse downloaded server database."
+echo -e  "   explore  <organization>        Explore organization name results."                   
+echo -e  "   help                           Give this help list."
 echo -e
 exit
 
@@ -103,10 +104,25 @@ shodan host "$SAS"
 exit
 
 elif [[ "$1" = "download" ]]
-SASA="$2"
-SASI="$3"
-shodan download "$SASA" "$SASI"
+then
+SAS="$2"
+SIS="$3"
+shodan download "$SAS" "$SIS"
 exit
+
+elif [[ "$1" = "parse" ]]
+then
+SAS="$2"
+shodan parse "$SAS"
+exit
+
+elif [[ "$1" = "explore" ]]
+then
+SAS="$2"
+shodan stats "$SAS"
+exit
+
+fi
 
 
 echo -e ""$BS"Please wait..."$CE""
