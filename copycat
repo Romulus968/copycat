@@ -70,8 +70,6 @@ sleep 0.5
      fi
 else
      sleep 0.5
-     spinner() 
-    { 
      local pid=$! 
      local delay=0.75 
      local spinstr='|/-\' 
@@ -82,11 +80,9 @@ else
       sleep $delay 
       printf "\b\b\b\b\b\b" 
      done 
-    } 
-     spinner()
-     {
+     
      pip install shodan
-     } &> /dev/null
+     
 sleep 0.5
 SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
 {
