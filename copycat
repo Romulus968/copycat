@@ -58,34 +58,21 @@ SAS="Error: Invalid API key"
 if [[ -f /usr/local/bin/shodan ]]
 then
 sleep 0.5
-if [[ -f ~/.shodan/api_key ]]
-then
-sleep 0.5
+     if [[ -f ~/.shodan/api_key ]]
+     then
+     sleep 0.5
+     else
+     sleep 0.5
+     SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+     {
+     shodan init "$SHO"
+     } &> /dev/null
+     fi
 else
-sleep 0.5
-SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
-{
-shodan init "$SHO"
-} &> /dev/null
-fi
-else
-sleep 0.5
-spinner() 
-    { 
-     local pid=$! 
-     local delay=0.75 
-     local spinstr='|/-\' 
-     while [ "$(ps a | awk '{print $1}' | grep $pid)" ]; do 
-      local temp=${spinstr#?} 
-      printf ""$BS"Installing dependences..." [%c] " "$spinstr""
-      local spinstr=$temp${spinstr%"$temp"} 
-      sleep $delay 
-      printf "\b\b\b\b\b\b" 
-     done 
-    } 
-
-pip install shodan
-
+     sleep 0.5
+     } 
+     pip install shodan
+     } &> /dev/null
 sleep 0.5
 SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
 {
