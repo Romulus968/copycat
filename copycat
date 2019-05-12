@@ -5,7 +5,7 @@
 #color end
 	CE="\033[0m"
 #red start
-	RS="\033[5;31m"
+	RS="\033[6;31m"
 #black start
 	BLS="\033[0;30m"
 #dark gray start
@@ -106,7 +106,7 @@ echo -e ""$BS"Please wait..."$CE""
 		shodan host "$A1"
 		{
 		ESENT="$(copycat "$A1")"
-		echo "$ESENT" >> ~/copycat
+		echo "$ESENT" >> ~/copycat/ips
 		} &> /dev/null
 		function ProgressBar {
 
