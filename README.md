@@ -115,7 +115,7 @@
 
     Search query:			    tomcat
     Total number of results:            77601
-    Query credits left:		      197673
+    Query credits left:		    197673
     Output file:			    tomcat.json.gz
       [####################################]  100%  00:00:00
     Saved 1000 results into file tomcat.json.gz
