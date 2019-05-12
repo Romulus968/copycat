@@ -78,7 +78,7 @@
 > copycat help
 
     Usage: copycat [OPTION...]
-    Copyright (C) 2019, Anna Fet. All Rights Reserved.
+    Copyright (C) 2019, Entynetproject. All Rights Reserved.
  
        host     <host>                View host or IP.
        download <filename> <server>   Download server databases.
@@ -93,7 +93,7 @@
        
  # Copycat examples
  
-> copycat host 
+> copycat host 183.63.126.164
  
     183.63.126.164
     City:                    Guangzhou
