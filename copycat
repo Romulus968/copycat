@@ -117,7 +117,7 @@ echo   "   parse    <filename>            Parse downloaded server database."
 echo   "   explore  <organization>        Explore organization name results."                   
 echo   "   honeypot <host>                Check whether the IP is a honeypot or not."
 echo   "   stream                         Stream internat data in real-time."
-echo   "   radar                          [Shodan] Shodan real-time results."
+echo   "   radar                          Copycat real-time results."
 echo   "   help                           Give this help list."
 echo 
 exit
@@ -334,6 +334,6 @@ SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
 shodan init "$SHO"
 } &> /dev/null
 fi
-shodan radar
+copycat-map
 
 fi
