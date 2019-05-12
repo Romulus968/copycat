@@ -56,14 +56,7 @@
 	WHS="\033[1;37m"
 
 echo
-echo  "                                 _   "
-echo  "                                | |  "
-echo  "  ___ ___  _ __  _   _  ___ __ _| |_ "
-echo  " / __/ _ \| '_ \| | | |/ __/ _` | __|"
-echo  "| (_| (_) | |_) | |_| | (_| (_| | |_ "
-echo  " \___\___/| .__/ \__, |\___\__,_|\__|"
-echo  "          | |     __/ |              "
-echo  "          |_|    |___/   Toolkit v1.0"             
+cat banner/banner.txt            
 echo 
 sleep 0.5
 echo  ""$RS"Uninstalling Copycat Toolkit..."$CE""
