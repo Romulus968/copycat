@@ -20,7 +20,12 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+if [[ -d copycat ]]
+then
+sleep 0.5
+else
 cp copycat /usr/local/bin
 chmod +x /usr/local/bin/copycat
 cp copycat-map /usr/local/bin
 chmod +x /usr/local/bin/copycat-map
+fi
