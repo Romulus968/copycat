@@ -1,3 +1,4 @@
+# Copycat Toolkit
                                      _   
                                     | |  
       ___ ___  _ __  _   _  ___ __ _| |_ 
@@ -7,7 +8,7 @@
               | |     __/ |              
               |_|    |___/   Art By DJ Mobley           
 
-# Copycat Toolkit
+# Copycat toolkit credits
     
     Name     : Copycat Toolkit 
     Author   : Anna Fet, Ivan Nikolsky
