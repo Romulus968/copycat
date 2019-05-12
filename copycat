@@ -71,7 +71,19 @@ exit
 fi
 else
 clear
-echo -e "$BS"Installing dependences..."
+spinner() 
+    { 
+     local pid=$! 
+     local delay=0.75 
+     local spinstr='|/-\' 
+     while [ "$(ps a | awk '{print $1}' | grep $pid)" ]; do 
+      local temp=${spinstr#?} 
+      printf ""$BS"Installing dependences..." [%c] " "$spinstr""
+      local spinstr=$temp${spinstr%"$temp"} 
+      sleep $delay 
+      printf "\b\b\b\b\b\b" 
+     done 
+    } 
 {
 pip install shodan
 } &> /dev/null
