@@ -1,6 +1,6 @@
 # MIT License
 
-# Copyright (c) 2015 Anna Fet (entyAV), Ivan Nikolsky (enty8080)
+# Copyright (c) 2019 Anna Fet (entyAV), Ivan Nikolsky (enty8080)
 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -107,6 +107,7 @@ SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
 shodan init "$SHO"
 } &> /dev/null
 fi
+sleep 1
 echo 
 echo  "Usage: copycat [OPTION...]"
 echo  "Copyright (C) 2019, Anna Fet. All Rights Reserved."
@@ -352,3 +353,20 @@ chmod +x install.sh
 } &> /dev/null
 
 fi
+
+sleep 1
+echo 
+echo  "Usage: copycat [OPTION...]"
+echo  "Copyright (C) 2019, Anna Fet. All Rights Reserved."
+echo 
+echo   "   host     <host>                View host or IP."
+echo   "   download <filename> <server>   Download server databases."
+echo   "   parse    <filename>            Parse downloaded server database."
+echo   "   explore  <organization>        Explore organization name results."                   
+echo   "   honeypot <host>                Check whether the IP is a honeypot or not."
+echo   "   stream                         Stream internat data in real-time."
+echo   "   radar                          Copycat real-time results."
+echo   "   update                         Update copycat toolkit."
+echo   "   help                           Give this help list."
+echo 
+exit
