@@ -93,6 +93,7 @@ echo -e  "   host     <host>                View host or IP."
 echo -e  "   download <filename> <server>   Download server databases."
 echo -e  "   parse    <filename>            Parse downloaded server database."
 echo -e  "   explore  <organization>        Explore organization name results."                   
+echo -e  "   honeypot <host>                Check whether the IP is a honeypot or not."
 echo -e  "   help                           Give this help list."
 echo -e
 exit
@@ -121,6 +122,11 @@ then
 SAS="$2"
 shodan stats "$SAS"
 exit
+
+elif [[ "$1" = "honeypot" ]]
+then
+SAS="$2"
+shodan honeyscore "$SAS"
 
 fi
 
