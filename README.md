@@ -8,8 +8,6 @@
               | |     __/ |              
               |_|    |___/   Art By DJ Mobley           
 
-# Copycat toolkit credits
-
 <p align="center">
   <a href="http://entynetproject.simplesite.com/">
     <img src="https://img.shields.io/badge/entynetproject-Ivan%20Nikolsky-blue.svg">
@@ -39,9 +37,12 @@
       <img src="https://img.shields.io/badge/wiki%20-copycat-lightgrey.svg">
  </a>
 </p>
+
+# Copycat toolkit credits
    
     Name     : Copycat Toolkit 
     Author   : Anna Fet, Ivan Nikolsky
+    Version  : v1.0 (first release)
     Database : Shodan (https://shodan.io/)
     Site     : https://entynetproject.simplesite.com/
     API      : Automate Shodan API
