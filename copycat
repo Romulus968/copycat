@@ -83,6 +83,7 @@ else
       printf "\b\b\b\b\b\b" 
      done 
     } 
+     spinner
      {
      pip install shodan
      } &> /dev/null
