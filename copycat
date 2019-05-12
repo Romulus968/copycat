@@ -61,7 +61,6 @@ echo -e ""$BS"Please wait..."$CE""
 	A1="$1"
 		
 		shodan host "$A1"
-		exit
 		{
 		ESENT="$(copycat "$A1")"
 		echo "$ESENT" >> ~/copycat/ips
@@ -93,3 +92,4 @@ do
     sleep 0.2
     ProgressBar ${number} ${_end}
 done
+exit
