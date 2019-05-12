@@ -70,7 +70,7 @@
       [###################################-]   99%  00:00:00
     Saved 1000 results into file tomcat.json.gz
     
-# MIT Copycat License
+# MIT copycat license
 
     MIT License
 
