@@ -23,4 +23,4 @@
 cp copycat /usr/local/bin
 chmod +x /usr/local/bin/copycat
 cp copycat-map /usr/local/bin
-chmod +x /usr/local/bin
+chmod +x /usr/local/bin/copycat-map
