@@ -55,10 +55,30 @@
 #white start
 	WHS="\033[1;37m"
 
-sleep 1
+if [[ -d ~/copycat ]]
+then
+cd  ~/copycat
+cp copycat /usr/local/bin
+chmod +x /usr/local/bin/copycat
+cp copycat-map /usr/local/bin
+chmod +x /usr/local/bin/copycat-map
+echo
+else
+cd ~
+git clone https://github.com/entynetproject/copycat.git
+cd  ~/copycat
+cp copycat /usr/local/bin
+chmod +x /usr/local/bin/copycat
+cp copycat-map /usr/local/bin
+chmod +x /usr/local/bin/copycat-map
+echo
+fi
+sleep 0.5
 echo  
+cd ~/copycat
 cat banner/banner.txt
 echo
+sleep 1
 
 if [[ -f /usr/local/bin/shodan ]]
 then
