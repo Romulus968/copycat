@@ -31,7 +31,7 @@
       <img src="https://img.shields.io/github/issues/entynetproject/copycat.svg">
   </a>
   <a href="https://github.com/entynetproject/ECLI">
-      <img src="https://img.shields.io/badge/files-5-red.svg?maxAge=2592000">
+      <img src="https://img.shields.io/badge/files-6-red.svg?maxAge=2592000">
   </a>
   <a href="https://github.com/entynetproject/ECLI/wiki">
       <img src="https://img.shields.io/badge/wiki%20-copycat-lightgrey.svg">
