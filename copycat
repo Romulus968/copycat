@@ -106,7 +106,7 @@ echo -e  "   download <filename> <server>   Download server databases."
 echo -e  "   parse    <filename>            Parse downloaded server database."
 echo -e  "   explore  <organization>        Explore organization name results."                   
 echo -e  "   honeypot <host>                Check whether the IP is a honeypot or not."
-echo -e  "   stream                         Stream data in real-time.
+echo -e  "   stream                         Stream data in real-time."
 echo -e  "   help                           Give this help list."
 echo -e
 exit
