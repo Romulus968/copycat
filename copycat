@@ -109,14 +109,14 @@ shodan init "$SHO"
 fi
 sleep 1
 echo
-echo  "                                 _   
-echo  "                                | |  
-echo  "  ___ ___  _ __  _   _  ___ __ _| |_ 
-echo  " / __/ _ \| '_ \| | | |/ __/ _` | __|
-echo  "| (_| (_) | |_) | |_| | (_| (_| | |_ 
-echo  " \___\___/| .__/ \__, |\___\__,_|\__|
-echo  "          | |     __/ |              
-echo  "          |_|    |___/   Toolkit v1.0             
+echo  "                                 _   "
+echo  "                                | |  "
+echo  "  ___ ___  _ __  _   _  ___ __ _| |_ "
+echo  " / __/ _ \| '_ \| | | |/ __/ _` | __|"
+echo  "| (_| (_) | |_) | |_| | (_| (_| | |_ "
+echo  " \___\___/| .__/ \__, |\___\__,_|\__|"
+echo  "          | |     __/ |              "
+echo  "          |_|    |___/   Toolkit v1.0"             
 echo 
 echo  "Usage: copycat [OPTION...]"
 echo  "Copyright (C) 2019, Anna Fet. All Rights Reserved."
@@ -365,14 +365,14 @@ chmod +x install.sh
 elif [[ "$1" = "info" ]]
 then
 echo
-echo  "                                 _   
-echo  "                                | |  
-echo  "  ___ ___  _ __  _   _  ___ __ _| |_ 
-echo  " / __/ _ \| '_ \| | | |/ __/ _` | __|
-echo  "| (_| (_) | |_) | |_| | (_| (_| | |_ 
-echo  " \___\___/| .__/ \__, |\___\__,_|\__|
-echo  "          | |     __/ |              
-echo  "          |_|    |___/   Art by DJ Mobley            
+echo  "                                 _   "
+echo  "                                | |  "
+echo  "  ___ ___  _ __  _   _  ___ __ _| |_ "
+echo  " / __/ _ \| '_ \| | | |/ __/ _` | __|"
+echo  "| (_| (_) | |_) | |_| | (_| (_| | |_ "
+echo  " \___\___/| .__/ \__, |\___\__,_|\__|"
+echo  "          | |     __/ |              "
+echo  "          |_|    |___/   Art By DJ Mobley"            
 echo  
 echo  "   Name     : Copycat Toolki"
 echo  "   Author   : Anna Fet, Ivan Nikolsky"
@@ -387,14 +387,14 @@ fi
 
 sleep 1
 echo
-echo  "                                 _   
-echo  "                                | |  
-echo  "  ___ ___  _ __  _   _  ___ __ _| |_ 
-echo  " / __/ _ \| '_ \| | | |/ __/ _` | __|
-echo  "| (_| (_) | |_) | |_| | (_| (_| | |_ 
-echo  " \___\___/| .__/ \__, |\___\__,_|\__|
-echo  "          | |     __/ |              
-echo  "          |_|    |___/   Toolkit v1.0             
+echo  "                                 _   "
+echo  "                                | |  "
+echo  "  ___ ___  _ __  _   _  ___ __ _| |_ "
+echo  " / __/ _ \| '_ \| | | |/ __/ _` | __|"
+echo  "| (_| (_) | |_) | |_| | (_| (_| | |_ "
+echo  " \___\___/| .__/ \__, |\___\__,_|\__|"
+echo  "          | |     __/ |              "
+echo  "          |_|    |___/   Toolkit v1.0"               
 echo 
 echo  "Usage: copycat [OPTION...]"
 echo  "Copyright (C) 2019, Anna Fet. All Rights Reserved."           
