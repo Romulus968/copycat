@@ -20,6 +20,15 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+                                 _   
+                                | | 
+  ___ ___  _ __  _   _  ___ __ _| |_ 
+ / __/ _ \| '_ \| | | |/ __/ _` | __|
+| (_| (_) | |_) | |_| | (_| (_| | |_ 
+ \___\___/| .__/ \__, |\___\__,_|\__|
+          | |     __/ |              
+          |_|    |___/   Toolkit v1.0           
+
 if [[ -d ~/copycat ]]
 then
 cd  ~/copycat
