@@ -39,6 +39,7 @@
        stream                         Stream internat data in real-time.
        radar                          Copycat real-time results.
        update                         Update copycat toolkit.
+       info                           View information about copycat toolkit.
        help                           Give this help list.
        
  # Copycat examples
