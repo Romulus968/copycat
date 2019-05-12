@@ -363,7 +363,7 @@ cd ~/copycat
 cat banner/banner1.txt        
 echo  
 echo  "   Name     : Copycat Toolki"
-echo  "   Author   : Entynetproject (Anna Fet, Ivan Nikolsky)"
+echo  "   Author   : Entynetproject (Ivan Nikolsky, Anna Fet)
 echo  "   Version  : v1.0 (first release)"
 echo  "   Database : Shodan (https://shodan.io/)"
 echo  "   Site     : https://entynetproject.simplesite.com/"
