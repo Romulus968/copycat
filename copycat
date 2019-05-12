@@ -1,0 +1,106 @@
+#yellow start 
+	YS="\e[1;33m"
+#blue start 
+	BS="\e[0;34m"
+#color end
+	CE="\e[0m"
+#red start
+	RS="\e[5;31m"
+#black start
+	BLS="\e[0;30m"
+#dark gray start
+	DGYS="\e[1;30m"
+#light blue start
+	LBS="\e[1;34m"
+#green start
+	GNS="\e[0;32m"
+#light green start
+	LGNS="\e[1;32m"
+#cyan start
+	CYS="\e[0;36m"
+#light cyan start
+	LCYS="\e[1;36m"
+#light red start
+	DRS="\e[0;31m"
+#purple start
+	PS="\e[0;35m"
+#light purple start
+	LPS="\e[1;35m"
+#brown start
+	BRS="\e[0;33m"
+#light gray start
+	LGYS="\e[0;37m"
+#white start
+	WHS="\e[1;37m"
+SAS="Error: Invalid API key"
+if [[ -f /usr/local/bin/shodan ]]
+then
+clear
+if [[ -f ~/.shodan/api_key ]]
+then
+clear
+else
+echo -n "(your shodan API key)>"
+read -p $' ' SHO
+shodan init "$SHO"
+SDO="$(shodan init "$SHO")"
+exit
+fi
+else
+clear
+pip install shodan
+echo -n "(your shodan API key)>"
+read -p $' ' SHO
+shodan init "$SHO"
+SDO="$(shodan init "$SHO")"
+exit
+fi
+
+
+echo -e ""$BS"Please wait..."$CE""
+	A1="$1"
+		country=$(curl ipinfo.io/"$A1"/country 2>/dev/null)
+		if [[ "$country" = "" ]]
+		then
+			country=""$RS"Not found"$CE""
+		fi
+		loc=$(curl ipinfo.io/"$A1"/loc 2>/dev/null)
+		if [[ "$loc" = "" ]]
+		then
+			locbool=0
+			loc=""$RS"Not found"$CE""
+		fi
+		city=$(curl ipinfo.io/"$A1"/city 2>/dev/null)
+		if [[ "$city" = "" ]]
+		then
+			city=""$RS"Not found"$CE""
+		fi
+		org=$(curl ipinfo.io/"$A1"/org 2>/dev/null)
+		if [[ "$org" = "" ]]
+		then
+			org=""$RS"Not found"$CE""
+		fi
+		postal=$(curl ipinfo.io/"$A1"/postal 2>/dev/null)
+		if [[ "$postal" = "" ]]
+		then
+			postal=""$RS"Not found"$CE""
+		fi
+		region=$(curl ipinfo.io/"$A1"/region 2>/dev/null)
+		if [[ "$region" = "" ]]
+		then
+			region=""$RS"Not found"$CE""
+		fi
+		hostname=$(curl ipinfo.io/"$A1"/hostname 2>/dev/null)
+		if [[ "$hostname" = "" ]]
+		then
+			hostname=""$RS"Not found"$CE""
+		fi
+		echo -e "$GNS""$A1""$CE"
+             echo -e "     Country: $country"
+		echo -e "      Region: $region"
+		echo -e "    Location: $loc"
+		echo -e "        City: $city"
+		echo -e "      Postal: $postal"
+		echo -e "    Hostname: $hostname"
+		echo -e "Organization: $org"
+		shodan host "$A1"
