@@ -82,11 +82,7 @@ sleep 0.5
      fi
 else
      sleep 0.5
-     echo  ""$BS"Connecting to database..."$CE""
-     sleep 1
      echo  ""$BS"Installing dependences..."$CE""
-     sleep 1
-     echo  ""$BS"Fixing permissions..."$CE""
      {
      pip install shodan
      } &> /dev/null
