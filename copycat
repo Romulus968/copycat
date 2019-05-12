@@ -57,20 +57,19 @@
 SAS="Error: Invalid API key"
 if [[ -f /usr/local/bin/shodan ]]
 then
-clear
+sleep 0.5
 if [[ -f ~/.shodan/api_key ]]
 then
-clear
+sleep 0.5
 else
-clear
-sleep 1
+sleep 0.5
 SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
 {
 shodan init "$SHO"
 } &> /dev/null
 fi
 else
-clear
+sleep 0.5
 spinner() 
     { 
      local pid=$! 
@@ -87,8 +86,7 @@ spinner()
 {
 pip install shodan
 } &> /dev/null
-sleep 1
-clear
+sleep 0.5
 SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
 {
 shodan init "$SHO"
@@ -115,6 +113,7 @@ exit
 elif [[ "$1" = "host" ]]
 then
 SAS="$2"
+clear
 echo -e ""$BS"Please wait..."$CE""
 shodan host "$SAS"
 exit
