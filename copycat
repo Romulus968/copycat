@@ -355,7 +355,14 @@ chmod +x install.sh
 
 elif [[ "$1" = "info" ]]
 then
-
+echo 
+echo  "   Name     : Copycat Toolki"
+echo  "   Author   : Anna Fet, Ivan Nikolsky"
+echo  "   Database : Shodan (https://shodan.io/)"
+echo  "   Site     : https://entynetproject.simplesite.com/"
+echo  "   API      : Automate Shodan API"
+echo
+exit
 
 fi
 
