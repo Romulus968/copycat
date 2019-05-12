@@ -70,6 +70,7 @@ sleep 0.5
      fi
 else
      sleep 0.5
+     function sas
      local pid=$! 
      local delay=0.75 
      local spinstr='|/-\' 
@@ -80,7 +81,7 @@ else
       sleep $delay 
       printf "\b\b\b\b\b\b" 
      done 
-     
+     sas
      pip install shodan
      
 sleep 0.5
