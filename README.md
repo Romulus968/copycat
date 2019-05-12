@@ -65,6 +65,14 @@
 
 > ./install.sh
 
+# How to uninstall copycat
+
+> cd copycat
+
+> chmod +x uninstall.sh
+
+> ./uninstall.sh
+
 # How to execute copycat
 
 > copycat help
