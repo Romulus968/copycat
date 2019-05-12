@@ -1,14 +1,12 @@
 # Copycat Toolkit
     
-Name     : Copycat Toolkit 
+    Name     : Copycat Toolkit 
+    Author   : Anna Fet, Ivan Nikolsky
+    Database : Shodan (https://shodan.io/)
+    Site     : https://entynetproject.simplesite.com/
+    API      : Automate Shodan API
 
-Author   : Anna Fet, Ivan Nikolsky
-
-Database : Shodan (https://shodan.io/)
-
-Site     : https://entynetproject.simplesite.com/
-
-API      : Automate Shodan API
+# About copycat toolkit
 
     INFO: This is a set of tools to view information about hostname, 
     IP’s or real-time scanner! 
