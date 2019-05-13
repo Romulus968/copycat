@@ -238,7 +238,7 @@ class MapApp(object):
                 m.draw(scr)
             except curses.error:
                 raise Exception('Terminal window too small')
-            scr.addstr(0, 1, 'Copycat Global Map', curses.A_BOLD)
+            scr.addstr(0, 1, 'Copycat Global Radar', curses.A_BOLD)
             scr.addstr(0, 40, time.strftime("%c UTC", time.gmtime(now)).rjust(37), curses.A_BOLD)
 
             # Key Input
