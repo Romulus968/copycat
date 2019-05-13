@@ -312,6 +312,7 @@ shodan init "$SHO"
 } &> /dev/null
 fi
 shodan stream
+exit
 
 elif [[ "$1" = "radar" ]]
 then
@@ -341,6 +342,7 @@ shodan init "$SHO"
 } &> /dev/null
 fi
 copycat-map
+exit
 
 elif [[ "$1" = "update" ]]
 then
