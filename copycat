@@ -120,6 +120,7 @@ echo   "   download <filename> <server>   Download server databases."
 echo   "   parse    <filename>            Parse downloaded server database."
 echo   "   explore  <organization>        Explore organization name results."                   
 echo   "   search   <request>             Global database search."
+echo   "   domain   <domain>              View information about domain."
 echo   "   honeypot <host>                Check whether the IP is a honeypot or not."
 echo   "   stream                         Stream internat data in real-time."
 echo   "   radar                          Copycat real-time results."
@@ -405,6 +406,37 @@ SAS="$2"
 shodan search "$SAS"
 exit
 
+elif [[ "$1" = "domain" ]]
+then
+if [[ -f /usr/local/bin/shodan ]]
+then
+sleep 0.5
+     if [[ -f ~/.shodan/api_key ]]
+     then
+     sleep 0.5
+     else
+     sleep 0.5
+     SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+     {
+     shodan init "$SHO"
+     } &> /dev/null
+     fi
+else
+     sleep 0.5
+     echo  ""$BS"Installing dependences..."$CE""
+     {
+     pip install shodan
+     } &> /dev/null
+sleep 0.5
+SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+{
+shodan init "$SHO"
+} &> /dev/null
+fi
+SAS="$2"
+shodan domain "$SAS"
+exit
+
 fi
 
 sleep 1
@@ -420,6 +452,7 @@ echo   "   download <filename> <server>   Download server databases."
 echo   "   parse    <filename>            Parse downloaded server database."
 echo   "   explore  <organization>        Explore organization name results."                   
 echo   "   search   <request>             Global database search."
+echo   "   domain   <domain>              View information about domain."
 echo   "   honeypot <host>                Check whether the IP is a honeypot or not."
 echo   "   stream                         Stream internat data in real-time."
 echo   "   radar                          Copycat real-time results."
