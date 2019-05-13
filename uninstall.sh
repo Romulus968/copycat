@@ -65,4 +65,8 @@ sleep 1
 rm /usr/local/bin/copycat
 rm /usr/local/bin/copycat-map
 rm -r ~/copycat
-pip uninstall shodan
+sleep 1
+echo  ""$RS"Uninstalling installed dependences..."$CE""
+sleep 1
+echo  ""$RS"Uninstalling database..."$CE""
+pip uninstall -y shodan
