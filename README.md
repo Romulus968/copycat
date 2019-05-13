@@ -88,6 +88,7 @@
        parse    <filename>            Parse downloaded server database.
        explore  <organization>        Explore organization name results.                 
        search   <request>             Global database search.
+       domain   <domain>              View information about domain.
        honeypot <host>                Check whether the IP is a honeypot or not.
        stream                         Stream internat data in real-time.
        radar                          Copycat real-time results.
