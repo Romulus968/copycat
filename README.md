@@ -80,13 +80,14 @@
 
 > copycat help
 
-    Usage: copycat [OPTION...]
+    Usage: copycat [OPTION...] <ARGUMENT...>
     Copyright (C) 2019, Entynetproject. All Rights Reserved.
  
        host     <host>                View host or IP.
        download <filename> <server>   Download server databases.
        parse    <filename>            Parse downloaded server database.
        explore  <organization>        Explore organization name results.                 
+       search   <request>             Global database search.
        honeypot <host>                Check whether the IP is a honeypot or not.
        stream                         Stream internat data in real-time.
        radar                          Copycat real-time results.
