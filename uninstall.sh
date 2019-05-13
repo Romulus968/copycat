@@ -63,7 +63,7 @@ sleep 0.5
 echo  ""$RS"Uninstalling Copycat Toolkit..."$CE""
 sleep 1
 rm /usr/local/bin/copycat
-rm /usr/local/bin/copycat-map
+rm /usr/local/bin/copycat-radar
 rm -r ~/copycat
 sleep 1
 echo  ""$RS"Uninstalling installed dependences..."$CE""
