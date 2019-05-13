@@ -91,7 +91,7 @@
        domain   <domain>              View information about domain.
        honeypot <host>                Check whether the IP is a honeypot or not.
        stream                         Stream internat data in real-time.
-       radar                          Copycat real-time results.
+       radar                          Copycat global radar streaming.
        update                         Update copycat toolkit.
        info                           View information about copycat toolkit.
        help                           Give this help list.
