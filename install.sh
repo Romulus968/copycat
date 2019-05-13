@@ -60,8 +60,8 @@ then
 cd  ~/copycat
 cp copycat /usr/local/bin
 chmod +x /usr/local/bin/copycat
-cp copycat-map /usr/local/bin
-chmod +x /usr/local/bin/copycat-map
+cp copycat-radar /usr/local/bin
+chmod +x /usr/local/bin/copycat-radar
 else
 cd ~
 git clone https://github.com/entynetproject/copycat.git
