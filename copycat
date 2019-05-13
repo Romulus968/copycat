@@ -365,12 +365,12 @@ echo
 cd ~/copycat
 cat banner/banner1.txt        
 echo  
-echo  "   Name     : Copycat Toolkit"
-echo  "   Author   : Entynetproject (Ivan Nikolsky, Anna Fet)"
-echo  "   Version  : v1.0 (first release)"
-echo  "   Database : Shodan (https://shodan.io/)"
-echo  "   Site     : https://entynetproject.simplesite.com/"
-echo  "   API      : Automate Shodan API"
+echo  "   Name      : Copycat Toolkit"
+echo  "   Developer : Entynetproject"
+echo  "   Version   : v1.0 (first release)"
+echo  "   Database  : Shodan (https://shodan.io/)"
+echo  "   Site      : https://entynetproject.simplesite.com/"
+echo  "   API       : Automate Shodan API"
 echo
 exit
 
