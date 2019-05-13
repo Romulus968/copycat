@@ -112,13 +112,14 @@ echo
 cd ~/copycat
 cat banner/banner.txt             
 echo 
-echo  "Usage: copycat [OPTION...]"
+echo  "Usage: copycat [OPTION...] <ARGUMENT...>"
 echo  "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo 
 echo   "   host     <host>                View host or IP."
 echo   "   download <filename> <server>   Download server databases."
 echo   "   parse    <filename>            Parse downloaded server database."
 echo   "   explore  <organization>        Explore organization name results."                   
+echo   "   search   <request>             Global database search."
 echo   "   honeypot <host>                Check whether the IP is a honeypot or not."
 echo   "   stream                         Stream internat data in real-time."
 echo   "   radar                          Copycat real-time results."
@@ -373,6 +374,37 @@ echo  "   API      : Automate Shodan API"
 echo
 exit
 
+elif [[ "$1" = "search" ]]
+then
+if [[ -f /usr/local/bin/shodan ]]
+then
+sleep 0.5
+     if [[ -f ~/.shodan/api_key ]]
+     then
+     sleep 0.5
+     else
+     sleep 0.5
+     SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+     {
+     shodan init "$SHO"
+     } &> /dev/null
+     fi
+else
+     sleep 0.5
+     echo  ""$BS"Installing dependences..."$CE""
+     {
+     pip install shodan
+     } &> /dev/null
+sleep 0.5
+SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+{
+shodan init "$SHO"
+} &> /dev/null
+fi
+SAS="$2"
+shodan search "$SAS"
+exit
+
 fi
 
 sleep 1
@@ -380,13 +412,14 @@ echo
 cd ~/copycat
 cat banner/banner.txt           
 echo 
-echo  "Usage: copycat [OPTION...]"
+echo  "Usage: copycat [OPTION...] <ARGUMENT...>"
 echo  "Copyright (C) 2019, Entynetproject. All Rights Reserved."           
 echo  
 echo   "   host     <host>                View host or IP."
 echo   "   download <filename> <server>   Download server databases."
 echo   "   parse    <filename>            Parse downloaded server database."
 echo   "   explore  <organization>        Explore organization name results."                   
+echo   "   search   <request>             Global database search."
 echo   "   honeypot <host>                Check whether the IP is a honeypot or not."
 echo   "   stream                         Stream internat data in real-time."
 echo   "   radar                          Copycat real-time results."
