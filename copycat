@@ -343,7 +343,7 @@ SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
 shodan init "$SHO"
 } &> /dev/null
 fi
-copycat-map
+copycat-radar
 exit
 
 elif [[ "$1" = "update" ]]
