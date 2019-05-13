@@ -43,12 +43,12 @@
 
 # Copycat toolkit credits
    
-    Name     : Copycat Toolkit 
-    Author   : Entynetproject (Ivan Nikolsky, Anna Fet)
-    Version  : v1.0 (first release)
-    Database : Shodan (https://shodan.io/)
-    Site     : https://entynetproject.simplesite.com/
-    API      : Automate Shodan API
+    Name      : Copycat Toolkit 
+    Developer : Entynetproject
+    Version   : v1.0 (first release)
+    Database  : Shodan (https://shodan.io/)
+    Site      : https://entynetproject.simplesite.com/
+    API       : Automate Shodan API
 
 # About copycat toolkit
 
@@ -128,7 +128,7 @@
 
     MIT License
 
-    Copyright (C) 2019 Entynetproject. All Rights Reserved.
+    Copyright (C) 2019, Entynetproject. All Rights Reserved.
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
