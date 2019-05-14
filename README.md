@@ -127,17 +127,19 @@
     
 # Copycat database formats
 
-    --only-ip
-    --only-port
-    --only-org
-    --only-hostnames
-    --only-ip-port
-    --only-ip-org
-    --only-ip-hostnames
-    --only-port-org
-    --only-port-hostnames
-    --only-org-hostnames
-    --only-data
+    --only-ip             (view only ip)       
+    --only-port           (view only port)
+    --only-org            (view only org)
+    --only-hostnames      (view only hostnames)
+    --only-data           (view ip and port)
+    --only-ip-port        (view ip and port)
+    --only-ip-org         (view ip and org)
+    --only-ip-hostnames   (view ip and hostnames)
+    --only-port-org       (view port and org)
+    --only-port-hostnames (view port and hostnames)
+    --only-org-hostnames  (view org and hostnames)
+    --only-data-org       (view ip, port and org)
+    --only-data-hostnames (view ip, port and hostnames)
 
 # MIT copycat license
 
