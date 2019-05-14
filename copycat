@@ -20,6 +20,8 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+if [[ -d /System/Library/CoreServices/Finder.app ]]
+then
 #blue start 
 	BS="\033[1;34m"
 #color end
@@ -28,6 +30,16 @@
 	RS="\033[31m"
 #green start
 	GNS="\033[32m"
+else
+#blue start 
+	BS="\e[0;34m"
+#color end
+	CE="\e[0m"
+#red start
+	RS="\e[1;31m"
+#green start
+	GNS="\e[0;32m"
+fi
 	
 if [[ -f /usr/local/bin/shodan ]]
 then
