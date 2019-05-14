@@ -85,7 +85,7 @@
  
        host     <host>                View host or IP.
        download <filename> <server>   Download server databases.
-       parse    <filename>            Parse downloaded server database.
+       parse    <filename> <format>   Parse downloaded server database.
        explore  <organization>        Explore organization name results.                 
        search   <request>             Global database search.
        domain   <domain>              View information about domain.
