@@ -719,6 +719,7 @@ shodan init "$SHO"
 fi
 SAS="$2"
 shodan honeyscore "$SAS"
+exit
 
 elif [[ "$1" = "stream" ]]
 then
