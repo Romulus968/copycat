@@ -134,11 +134,8 @@
     --only-ip-port
     --only-ip-org
     --only-ip-hostnames
-    --only-port-ip
     --only-port-org
     --only-port-hostnames
-    --only-org-ip
-    --only-org-port
     --only-org-hostnames
     --only-data
 
