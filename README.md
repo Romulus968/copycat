@@ -125,6 +125,23 @@
       [####################################]  100%  00:00:00
     Saved 1000 results into file tomcat.json.gz
     
+# Copycat database formats
+
+    --only-ip
+    --only-port
+    --only-org
+    --only-hostnames
+    --only-ip-port
+    --only-ip-org
+    --only-ip-hostnames
+    --only-port-ip
+    --only-port-org
+    --only-port-hostnames
+    --only-org-ip
+    --only-org-port
+    --only-org-hostnames
+    --only-data
+
 # MIT copycat license
 
     MIT License
