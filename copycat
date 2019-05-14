@@ -117,7 +117,7 @@ echo  "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo 
 echo   "   host     <host>                View host or IP."
 echo   "   download <filename> <server>   Download server databases."
-echo   "   parse    <filename>            Parse downloaded server database."
+echo   "   parse    <filename> <format>   Parse downloaded server database."
 echo   "   explore  <organization>        Explore organization name results."                   
 echo   "   search   <request>             Global database search."
 echo   "   domain   <domain>              View information about domain."
@@ -196,6 +196,440 @@ exit
 
 elif [[ "$1" = "parse" ]]
 then
+if [[ "$2" = "--only-ip-port" ]]
+then
+if [[ -f /usr/local/bin/shodan ]]
+then
+sleep 0.5
+     if [[ -f ~/.shodan/api_key ]]
+     then
+     sleep 0.5
+     else
+     sleep 0.5
+     SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+     {
+     shodan init "$SHO"
+     } &> /dev/null
+     fi
+else
+     sleep 0.5
+     echo  ""$BS"Installing dependences..."$CE""
+     {
+     pip install shodan
+     } &> /dev/null
+sleep 0.5
+SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+{
+shodan init "$SHO"
+} &> /dev/null
+fi
+SAS="$3"
+shodan parse --fields ip_str,port --separator , "$SAS"
+exit
+fi
+if [[ "$2" = "--only-ip-org" ]]
+then
+if [[ -f /usr/local/bin/shodan ]]
+then
+sleep 0.5
+     if [[ -f ~/.shodan/api_key ]]
+     then
+     sleep 0.5
+     else
+     sleep 0.5
+     SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+     {
+     shodan init "$SHO"
+     } &> /dev/null
+     fi
+else
+     sleep 0.5
+     echo  ""$BS"Installing dependences..."$CE""
+     {
+     pip install shodan
+     } &> /dev/null
+sleep 0.5
+SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+{
+shodan init "$SHO"
+} &> /dev/null
+fi
+SAS="$3"
+shodan parse --fields ip_str,org --separator , "$SAS"
+exit
+fi
+if [[ "$2" = "--only-org-hostnames" ]]
+then
+if [[ -f /usr/local/bin/shodan ]]
+then
+sleep 0.5
+     if [[ -f ~/.shodan/api_key ]]
+     then
+     sleep 0.5
+     else
+     sleep 0.5
+     SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+     {
+     shodan init "$SHO"
+     } &> /dev/null
+     fi
+else
+     sleep 0.5
+     echo  ""$BS"Installing dependences..."$CE""
+     {
+     pip install shodan
+     } &> /dev/null
+sleep 0.5
+SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+{
+shodan init "$SHO"
+} &> /dev/null
+fi
+SAS="$3"
+shodan parse --fields org,hostnames --separator , "$SAS"
+exit
+fi
+if [[ "$2" = "--only-port-hostnames" ]]
+then
+if [[ -f /usr/local/bin/shodan ]]
+then
+sleep 0.5
+     if [[ -f ~/.shodan/api_key ]]
+     then
+     sleep 0.5
+     else
+     sleep 0.5
+     SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+     {
+     shodan init "$SHO"
+     } &> /dev/null
+     fi
+else
+     sleep 0.5
+     echo  ""$BS"Installing dependences..."$CE""
+     {
+     pip install shodan
+     } &> /dev/null
+sleep 0.5
+SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+{
+shodan init "$SHO"
+} &> /dev/null
+fi
+SAS="$3"
+shodan parse --fields port,hostnames --separator , "$SAS"
+exit
+fi
+if [[ "$2" = "--only-port-org" ]]
+then
+if [[ -f /usr/local/bin/shodan ]]
+then
+sleep 0.5
+     if [[ -f ~/.shodan/api_key ]]
+     then
+     sleep 0.5
+     else
+     sleep 0.5
+     SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+     {
+     shodan init "$SHO"
+     } &> /dev/null
+     fi
+else
+     sleep 0.5
+     echo  ""$BS"Installing dependences..."$CE""
+     {
+     pip install shodan
+     } &> /dev/null
+sleep 0.5
+SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+{
+shodan init "$SHO"
+} &> /dev/null
+fi
+SAS="$3"
+shodan parse --fields port,org --separator , "$SAS"
+exit
+fi
+if [[ "$2" = "--only-data-hostnames" ]]
+then
+if [[ -f /usr/local/bin/shodan ]]
+then
+sleep 0.5
+     if [[ -f ~/.shodan/api_key ]]
+     then
+     sleep 0.5
+     else
+     sleep 0.5
+     SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+     {
+     shodan init "$SHO"
+     } &> /dev/null
+     fi
+else
+     sleep 0.5
+     echo  ""$BS"Installing dependences..."$CE""
+     {
+     pip install shodan
+     } &> /dev/null
+sleep 0.5
+SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+{
+shodan init "$SHO"
+} &> /dev/null
+fi
+SAS="$3"
+shodan parse --fields ip_str,port,hostnames --separator , "$SAS"
+exit
+fi
+if [[ "$2" = "--only-hostnames" ]]
+then
+if [[ -f /usr/local/bin/shodan ]]
+then
+sleep 0.5
+     if [[ -f ~/.shodan/api_key ]]
+     then
+     sleep 0.5
+     else
+     sleep 0.5
+     SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+     {
+     shodan init "$SHO"
+     } &> /dev/null
+     fi
+else
+     sleep 0.5
+     echo  ""$BS"Installing dependences..."$CE""
+     {
+     pip install shodan
+     } &> /dev/null
+sleep 0.5
+SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+{
+shodan init "$SHO"
+} &> /dev/null
+fi
+SAS="$3"
+shodan parse --fields hostnames --separator , "$SAS"
+exit
+fi
+if [[ "$2" = "--only-ip-org" ]]
+then
+if [[ -f /usr/local/bin/shodan ]]
+then
+sleep 0.5
+     if [[ -f ~/.shodan/api_key ]]
+     then
+     sleep 0.5
+     else
+     sleep 0.5
+     SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+     {
+     shodan init "$SHO"
+     } &> /dev/null
+     fi
+else
+     sleep 0.5
+     echo  ""$BS"Installing dependences..."$CE""
+     {
+     pip install shodan
+     } &> /dev/null
+sleep 0.5
+SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+{
+shodan init "$SHO"
+} &> /dev/null
+fi
+SAS="$3"
+shodan parse --fields ip_str,org --separator , "$SAS"
+exit
+fi
+if [[ "$2" = "--only-ip-hostnames" ]]
+then
+if [[ -f /usr/local/bin/shodan ]]
+then
+sleep 0.5
+     if [[ -f ~/.shodan/api_key ]]
+     then
+     sleep 0.5
+     else
+     sleep 0.5
+     SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+     {
+     shodan init "$SHO"
+     } &> /dev/null
+     fi
+else
+     sleep 0.5
+     echo  ""$BS"Installing dependences..."$CE""
+     {
+     pip install shodan
+     } &> /dev/null
+sleep 0.5
+SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+{
+shodan init "$SHO"
+} &> /dev/null
+fi
+SAS="$3"
+shodan parse --fields ip_str,hostnames --separator , "$SAS"
+exit
+fi
+if [[ "$2" = "--only-data-org" ]]
+then
+if [[ -f /usr/local/bin/shodan ]]
+then
+sleep 0.5
+     if [[ -f ~/.shodan/api_key ]]
+     then
+     sleep 0.5
+     else
+     sleep 0.5
+     SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+     {
+     shodan init "$SHO"
+     } &> /dev/null
+     fi
+else
+     sleep 0.5
+     echo  ""$BS"Installing dependences..."$CE""
+     {
+     pip install shodan
+     } &> /dev/null
+sleep 0.5
+SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+{
+shodan init "$SHO"
+} &> /dev/null
+fi
+SAS="$3"
+shodan parse --fields ip_str,port,org --separator , "$SAS"
+exit
+fi
+if [[ "$2" = "--only-data" ]]
+then
+if [[ -f /usr/local/bin/shodan ]]
+then
+sleep 0.5
+     if [[ -f ~/.shodan/api_key ]]
+     then
+     sleep 0.5
+     else
+     sleep 0.5
+     SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+     {
+     shodan init "$SHO"
+     } &> /dev/null
+     fi
+else
+     sleep 0.5
+     echo  ""$BS"Installing dependences..."$CE""
+     {
+     pip install shodan
+     } &> /dev/null
+sleep 0.5
+SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+{
+shodan init "$SHO"
+} &> /dev/null
+fi
+SAS="$3"
+shodan parse --fields ip_str,port --separator , "$SAS"
+exit
+fi
+if [[ "$2" = "--only-org" ]]
+then
+if [[ -f /usr/local/bin/shodan ]]
+then
+sleep 0.5
+     if [[ -f ~/.shodan/api_key ]]
+     then
+     sleep 0.5
+     else
+     sleep 0.5
+     SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+     {
+     shodan init "$SHO"
+     } &> /dev/null
+     fi
+else
+     sleep 0.5
+     echo  ""$BS"Installing dependences..."$CE""
+     {
+     pip install shodan
+     } &> /dev/null
+sleep 0.5
+SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+{
+shodan init "$SHO"
+} &> /dev/null
+fi
+SAS="$3"
+shodan parse --fields org --separator , "$SAS"
+exit
+fi
+if [[ "$2" = "--only-port" ]]
+then
+if [[ -f /usr/local/bin/shodan ]]
+then
+sleep 0.5
+     if [[ -f ~/.shodan/api_key ]]
+     then
+     sleep 0.5
+     else
+     sleep 0.5
+     SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+     {
+     shodan init "$SHO"
+     } &> /dev/null
+     fi
+else
+     sleep 0.5
+     echo  ""$BS"Installing dependences..."$CE""
+     {
+     pip install shodan
+     } &> /dev/null
+sleep 0.5
+SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+{
+shodan init "$SHO"
+} &> /dev/null
+fi
+SAS="$3"
+shodan parse --fields port --separator , "$SAS"
+exit
+fi
+if [[ "$2" = "--only-ip" ]]
+then
+if [[ -f /usr/local/bin/shodan ]]
+then
+sleep 0.5
+     if [[ -f ~/.shodan/api_key ]]
+     then
+     sleep 0.5
+     else
+     sleep 0.5
+     SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+     {
+     shodan init "$SHO"
+     } &> /dev/null
+     fi
+else
+     sleep 0.5
+     echo  ""$BS"Installing dependences..."$CE""
+     {
+     pip install shodan
+     } &> /dev/null
+sleep 0.5
+SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+{
+shodan init "$SHO"
+} &> /dev/null
+fi
+SAS="$3"
+shodan parse --fields ip_str --separator , "$SAS"
+exit
+fi
 if [[ -f /usr/local/bin/shodan ]]
 then
 sleep 0.5
@@ -449,7 +883,7 @@ echo  "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo  
 echo   "   host     <host>                View host or IP."
 echo   "   download <filename> <server>   Download server databases."
-echo   "   parse    <filename>            Parse downloaded server database."
+echo   "   parse    <filename> <format>   Parse downloaded server database."
 echo   "   explore  <organization>        Explore organization name results."                   
 echo   "   search   <request>             Global database search."
 echo   "   domain   <domain>              View information about domain."
