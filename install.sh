@@ -32,13 +32,13 @@ then
 	GNS="\033[32m"
 else
 #blue start 
-	BS="\e[0;34m"
+	BS="-e \e[0;34m"
 #color end
 	CE="\e[0m"
 #red start
-	RS="\e[1;31m"
+	RS="-e \e[1;31m"
 #green start
-	GNS="\e[0;32m"
+	GNS="-e \e[0;32m"
 fi
 
 if [[ -d ~/copycat ]]
