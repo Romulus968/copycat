@@ -55,4 +55,7 @@ sleep 1
 echo  ""$RS"Uninstalling installed dependences..."$CE""
 sleep 1
 echo  ""$RS"Uninstalling database..."$CE""
+cd ~
+{
 pip uninstall -y shodan
+} &> /dev/null
