@@ -53,7 +53,7 @@
 # About copycat toolkit
 
     INFO: This is a set of tools to view information about hostname, 
-    IP’s or real-time scanner! 
+    IP’s or for real-time internet scanning! 
     Shodan database used in this toolkit to view information about...! 
     Project developed by Ivan Nikolsky and Anna Fet 
     (entynetproject organization)
