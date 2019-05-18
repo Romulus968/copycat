@@ -25,7 +25,7 @@
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
 #blue start 
-	BS="-e \033[1;34m"
+	BS="-e \033[34m"
 #color end
 	CE="\033[0m"
 #red start
