@@ -18,9 +18,6 @@
   <a href="https://github.com/entynetproject/copycat/releases">
     <img src="https://img.shields.io/github/release/entynetproject/copycat.svg">
   </a>
-  <a href="http://entynetproject.simplesite.com/">
-    <img src="https://img.shields.io/badge/site-entynetproject-green.svg?maxAge=2592000">
-  </a>
   <a href="https://ru.m.wikipedia.org/wiki/Python">
     <img src="https://img.shields.io/badge/language-python-blue.svg">
  </a>
