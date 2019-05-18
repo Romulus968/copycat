@@ -30,10 +30,7 @@
   <a href="https://github.com/entynetproject/copycat/issues?q=is%3Aissue+is%3Aclosed">
       <img src="https://img.shields.io/github/issues/entynetproject/copycat.svg">
   </a>
-  <a href="https://github.com/entynetproject/ECLI">
-      <img src="https://img.shields.io/badge/files-7-red.svg?maxAge=2592000">
-  </a>
-  <a href="https://github.com/entynetproject/ECLI/wiki">
+  <a href="https://github.com/entynetproject/copycat/wiki">
       <img src="https://img.shields.io/badge/wiki%20-copycat-lightgrey.svg">
  </a>
   <a href="https://mobile.twitter.com/copycat_toolkit">
