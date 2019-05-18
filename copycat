@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # MIT License
 
 # Copyright (C) 2019, Entynetproject. All Rights Reserved.
