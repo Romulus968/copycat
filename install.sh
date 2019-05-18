@@ -38,7 +38,7 @@ else
 #color end
 	CE="\e[0m"
 #red start
-	RS="-e \e[1;31m"
+	RS="-e \e[0;31m"
 #green start
 	GNS="-e \e[0;32m"
 fi
