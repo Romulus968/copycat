@@ -22,6 +22,17 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+if [[ -d /System/Library/CoreServices/Finder.app ]]
+then
+#blue start 
+	BS="-e \033[1;34m"
+#color end
+	CE="\033[0m"
+#red start
+	RS="-e \033[31m"
+#green start
+	GNS="-e \033[32m"
+else
 #blue start 
 	BS="-e \e[0;34m"
 #color end
@@ -30,6 +41,7 @@
 	RS="-e \e[1;31m"
 #green start
 	GNS="-e \e[0;32m"
+fi
 	
 echo
 cd ~/copycat
