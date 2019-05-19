@@ -135,7 +135,7 @@
     --only-data-org       (view ip, port and org)
     --only-data-hostnames (view ip, port and hostnames)
 
-# MIT copycat license
+# Copycat MIT license
 
     MIT License
 
