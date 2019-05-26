@@ -79,7 +79,7 @@
  
        host     <host>                View host or IP.
        download <filename> <server>   Download server databases.
-       parse    <filename> <format>   Parse downloaded server database.
+       parse    <format> <filename>   Parse downloaded server database.
        explore  <organization>        Explore organization name results.                 
        search   <request>             Global database search.
        domain   <domain>              View information about domain.
@@ -119,7 +119,7 @@
       [####################################]  100%  00:00:00
     Saved 1000 results into file tomcat.json.gz
     
-# Copycat database formats
+# Copycat parse formats
 
     --only-ip             (view only ip)       
     --only-port           (view only port)
