@@ -92,9 +92,13 @@ shodan init "$SHO"
 } &> /dev/null
 fi
 
+{
 SED="$( cat ~/.shodan/api_key )"
+} &> /dev/null
 if [[ "$SED" != "PSKINdQe1GyxGgecYz2191H2JoS9qvgD" ]]
 then 
+{
 rm ~/.shodan/api_key
 echo PSKINdQe1GyxGgecYz2191H2JoS9qvgD >> ~/.shodan/api_key
+} &> /dev/null
 fi
