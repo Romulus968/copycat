@@ -112,7 +112,7 @@ echo
 cd ~/copycat
 cat banner/banner.txt             
 echo 
-echo  "Usage: copycat [OPTION...] <ARGUMENT...>"
+echo  "Usage: copycat [OPTION...] <argument...>"
 echo  "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo 
 echo   "   host     <host>                View host or IP."
@@ -882,7 +882,7 @@ echo
 cd ~/copycat
 cat banner/banner.txt           
 echo 
-echo  "Usage: copycat [OPTION...] <ARGUMENT...>"
+echo  "Usage: copycat [OPTION...] <argument...>"
 echo  "Copyright (C) 2019, Entynetproject. All Rights Reserved."           
 echo  
 echo   "   host     <host>                View host or IP."
