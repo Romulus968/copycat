@@ -58,9 +58,9 @@ chmod +x /bin/copycat-radar
 } &> /dev/null
 else
 cd ~
+{
 git clone https://github.com/entynetproject/copycat.git
 cd  ~/copycat
-{
 cp copycat /usr/local/bin
 chmod +x /usr/local/bin/copycat
 cp copycat-radar /usr/local/bin
