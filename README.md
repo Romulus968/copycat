@@ -77,7 +77,7 @@
     Usage: copycat [OPTION...] <argument...>
     Copyright (C) 2019, Entynetproject. All Rights Reserved.
  
-       host     <host>                View host or IP.
+       host     <host>                Show information about host.
        download <filename> <server>   Download server databases.
        parse    <format> <filename>   Parse downloaded server database.
        explore  <organization>        Explore organization name results.                 
