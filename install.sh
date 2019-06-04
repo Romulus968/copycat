@@ -46,18 +46,30 @@ fi
 if [[ -d ~/copycat ]]
 then
 cd  ~/copycat
+{
 cp copycat /usr/local/bin
 chmod +x /usr/local/bin/copycat
 cp copycat-radar /usr/local/bin
 chmod +x /usr/local/bin/copycat-radar
+cp copycat /bin
+chmod +x /bin/copycat
+cp copycat-radar /bin
+chmod +x /bin/copycat-radar
+} &> /dev/null
 else
 cd ~
 git clone https://github.com/entynetproject/copycat.git
 cd  ~/copycat
+{
 cp copycat /usr/local/bin
 chmod +x /usr/local/bin/copycat
 cp copycat-radar /usr/local/bin
 chmod +x /usr/local/bin/copycat-radar
+cp copycat /bin
+chmod +x /bin/copycat
+cp copycat-radar /bin
+chmod +x /bin/copycat-radar
+} &> /dev/null
 fi
 sleep 0.5
 echo  
