@@ -82,12 +82,12 @@
        parse    <format> <filename>   Parse downloaded server database.
        explore  <organization>        Explore organization name results.                 
        search   <request>             Global database search.
-       domain   <domain>              View information about domain.
+       domain   <domain>              Show information about domain.
        honeypot <host>                Check whether the IP is a honeypot or not.
        stream                         Stream internat data in real-time.
        radar                          Copycat global radar streaming.
        update                         Update copycat toolkit.
-       info                           View information about copycat toolkit.
+       info                           Show information about copycat toolkit.
        help                           Give this help list.
        
  # Copycat examples
