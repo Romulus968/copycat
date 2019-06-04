@@ -55,7 +55,7 @@
 # How to install copycat
 
     INFO: Copycat Toolkit will be installed to /bin and
-    /usr/local/bin like /bin/epkg and /usr/local/bin/epkg!
+    /usr/local/bin like /bin/copycat and /usr/local/bin/copycat!
     
 > cd copycat
 
