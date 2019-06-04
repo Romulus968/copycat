@@ -115,17 +115,17 @@ echo
 echo  "Usage: copycat [OPTION...] <argument...>"
 echo  "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo 
-echo   "   host     <host>                View host or IP."
+echo   "   host     <host>                Show information about host."
 echo   "   download <filename> <server>   Download server databases."
 echo   "   parse    <format> <filename>   Parse downloaded server database."
 echo   "   explore  <organization>        Explore organization name results."                   
 echo   "   search   <request>             Global database search."
-echo   "   domain   <domain>              View information about domain."
+echo   "   domain   <domain>              Show information about domain."
 echo   "   honeypot <host>                Check whether the IP is a honeypot or not."
 echo   "   stream                         Stream internat data in real-time."
 echo   "   radar                          Copycat global radar streaming."
 echo   "   update                         Update copycat toolkit."
-echo   "   info                           View information about copycat toolkit."
+echo   "   info                           Show information about copycat toolkit."
 echo   "   help                           Give this help list."
 echo 
 exit
@@ -885,17 +885,17 @@ echo
 echo  "Usage: copycat [OPTION...] <argument...>"
 echo  "Copyright (C) 2019, Entynetproject. All Rights Reserved."           
 echo  
-echo   "   host     <host>                View host or IP."
+echo   "   host     <host>                Show information about host."
 echo   "   download <filename> <server>   Download server databases."
 echo   "   parse    <format> <filename>   Parse downloaded server database."
 echo   "   explore  <organization>        Explore organization name results."                   
 echo   "   search   <request>             Global database search."
-echo   "   domain   <domain>              View information about domain."
+echo   "   domain   <domain>              Show information about domain."
 echo   "   honeypot <host>                Check whether the IP is a honeypot or not."
 echo   "   stream                         Stream internat data in real-time."
 echo   "   radar                          Copycat global radar streaming."
 echo   "   update                         Update copycat toolkit."
-echo   "   info                           View information about copycat toolkit."
+echo   "   info                           Show information about copycat toolkit."
 echo   "   help                           Give this help list."
 echo 
 exit
