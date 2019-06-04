@@ -74,7 +74,7 @@
 
 > copycat help
 
-    Usage: copycat [OPTION...] <ARGUMENT...>
+    Usage: copycat [OPTION...] <argument...>
     Copyright (C) 2019, Entynetproject. All Rights Reserved.
  
        host     <host>                View host or IP.
