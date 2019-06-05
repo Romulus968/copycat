@@ -42,32 +42,6 @@ else
 #green start
 	GNS="-e \e[0;32m"
 fi
-	
-if [[ -f /usr/local/bin/shodan ]]
-then
-sleep 0.5
-     if [[ -f ~/.shodan/api_key ]]
-     then
-     sleep 0.5
-     else
-     sleep 0.5
-     SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
-     {
-     shodan init "$SHO"
-     } &> /dev/null
-     fi
-else
-     sleep 0.5
-     echo  ""$BS"Installing dependences..."$CE""
-     {
-     pip install shodan
-     } &> /dev/null
-sleep 0.5
-SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
-{
-shodan init "$SHO"
-} &> /dev/null
-fi
 
 {
 SED="$( cat ~/.shodan/api_key )"
@@ -875,6 +849,43 @@ SAS="$2"
 shodan domain "$SAS"
 exit
 
+fi
+
+if [[ -f /usr/local/bin/shodan ]]
+then
+sleep 0.5
+     if [[ -f ~/.shodan/api_key ]]
+     then
+     sleep 0.5
+     else
+     sleep 0.5
+     SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+     {
+     shodan init "$SHO"
+     } &> /dev/null
+     fi
+else
+     sleep 0.5
+     echo  ""$BS"Installing dependences..."$CE""
+     {
+     pip install shodan
+     } &> /dev/null
+sleep 0.5
+SHO="PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+{
+shodan init "$SHO"
+} &> /dev/null
+fi
+
+{
+SED="$( cat ~/.shodan/api_key )"
+} &> /dev/null
+if [[ "$SED" != "PSKINdQe1GyxGgecYz2191H2JoS9qvgD" ]]
+then 
+{
+rm ~/.shodan/api_key
+echo PSKINdQe1GyxGgecYz2191H2JoS9qvgD >> ~/.shodan/api_key
+} &> /dev/null
 fi
 
 sleep 1
