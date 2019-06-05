@@ -43,6 +43,17 @@ else
 	GNS="-e \e[0;32m"
 fi
 
+if [[ -d ~/copycat ]]
+then
+cd ~
+sleep 0.5
+cd ~/copycat
+else
+cd ~
+git clone https://github.com/entynetproject/copycat.git
+cd ~/copycat
+fi
+
 {
 SED="$( cat ~/.shodan/api_key )"
 } &> /dev/null
