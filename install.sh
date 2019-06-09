@@ -43,6 +43,18 @@ else
 	GNS="-e \e[0;32m"
 fi
 
+WHO="$( whoami )"
+
+if [[ "$WHO" != "root" ]]
+then
+sleep 1
+echo -e "$RS"run it as"$CE" "$YS"root"$CE"
+sleep 1
+echo -e "$RS"or use"$CE" "$YS"sudo"$CE"
+sleep 1
+exit
+fi
+
 if [[ -d ~/copycat ]]
 then
 cd  ~/copycat
