@@ -24,6 +24,8 @@
 
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
+RSA="\033[1;31m"
+YSA="\033[1;33m"
 #blue start 
 	BS="-e \033[34m"
 #color end
@@ -33,6 +35,8 @@ then
 #green start
 	GNS="-e \033[32m"
 else
+RSA="\e[1;31m"
+YSA="\e[1;33m"
 #blue start 
 	BS="-e \e[0;34m"
 #color end
@@ -48,9 +52,9 @@ WHO="$( whoami )"
 if [[ "$WHO" != "root" ]]
 then
 sleep 1
-echo "$RS"run it as"$CE" "$YS"root"$CE"
+echo -e "$RSA"run it as"$CE" "$YSA"root"$CE"
 sleep 1
-echo "$RS"or use"$CE" "$YS"sudo"$CE"
+echo -e "$RSA"or use"$CE" "$YSA"sudo"$CE"
 sleep 1
 exit
 fi
