@@ -78,15 +78,15 @@
     Usage: copycat [OPTION...] <argument...>
     Copyright (C) 2019, Entynetproject. All Rights Reserved.
  
-       host     <host>                Show information for an IP.
+       host     <host>                Show all available information for an IP.
        download <filename> <request>  Download search results as JSON database.
        parse    <format> <filename>   Extract information out of compressed JSON.
-       explore  <organization>        Explore organization name results.                 
-       search   <request>             Search the internet of things.
-       domain   <domain>              Show information about domain.
+       explore  <request>             Provide summary information about a search.                 
+       search   <request>             Search the internet of things from copycat.
+       domain   <domain>              Show all available information for domain.
        honeypot <host>                Check whether the IP is a honeypot or not.
        stream                         Stream the internet of things in real-time.
-       radar                          Copycat real-time map of internet of things.
+       radar                          The real-time map of the internet of things.
        update                         Update copycat toolkit.
        info                           Show copycat credits.
        help                           Give this help list.
