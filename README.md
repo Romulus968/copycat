@@ -78,17 +78,17 @@
     Usage: copycat [OPTION...] <argument...>
     Copyright (C) 2019, Entynetproject. All Rights Reserved.
  
-       host     <host>                Show information about host.
-       download <filename> <server>   Download server databases.
-       parse    <format> <filename>   Parse downloaded server database.
+       host     <host>                Show information for an IP.
+       download <filename> <request>  Download search results as JSON database.
+       parse    <format> <filename>   Extract information out of compressed JSON.
        explore  <organization>        Explore organization name results.                 
-       search   <request>             Global database search.
+       search   <request>             Search the internet of things.
        domain   <domain>              Show information about domain.
        honeypot <host>                Check whether the IP is a honeypot or not.
-       stream                         Stream internat data in real-time.
-       radar                          Copycat global radar streaming.
+       stream                         Stream the internet of things in real-time.
+       radar                          Copycat real-time map of internet of things.
        update                         Update copycat toolkit.
-       info                           Show information about copycat toolkit.
+       info                           Show copycat credits.
        help                           Give this help list.
        
  # Copycat examples
