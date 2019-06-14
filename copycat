@@ -104,7 +104,7 @@ echo
 echo  "    host     <host>                Show all available information for an IP."
 echo  "    download <filename> <request>  Download search results as JSON database."
 echo  "    parse    <format> <filename>   Extract information out of compressed JSON."
-echo  "    explore  <request>             Provide summary information about a search."                 
+echo  "    stats    <request>             Provide summary information about a search."                 
 echo  "    search   <request>             Search the internet of things from copycat."
 echo  "    domain   <domain>              Show all available information for domain."
 echo  "    honeypot <host>                Check whether the IP is a honeypot or not."
@@ -628,7 +628,7 @@ SAS="$2"
 shodan parse "$SAS"
 exit
 
-elif [[ "$1" = "explore" ]]
+elif [[ "$1" = "stats" ]]
 then
 if [[ -f /usr/local/bin/shodan ]]
 then
@@ -887,7 +887,7 @@ echo
 echo  "    host     <host>                Show all available information for an IP."
 echo  "    download <filename> <request>  Download search results as JSON database."
 echo  "    parse    <format> <filename>   Extract information out of compressed JSON."
-echo  "    explore  <request>             Provide summary information about a search."                 
+echo  "    stats    <request>             Provide summary information about a search."                 
 echo  "    search   <request>             Search the internet of things from copycat."
 echo  "    domain   <domain>              Show all available information for domain."
 echo  "    honeypot <host>                Check whether the IP is a honeypot or not."
