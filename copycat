@@ -110,10 +110,10 @@ echo  "    domain   <domain>              Show all available information for dom
 echo  "    honeypot <host>                Check whether the IP is a honeypot or not."
 echo  "    stream                         Stream the internet of things in real-time."
 echo  "    radar                          The real-time map of the internet of things."
-echo  "    update                         Update copycat toolkit."
-echo  "    info                           Show copycat credits."
-echo  "    help                           Give this help list."
-echo
+echo  "    update                         Update copycat toolkit and API configuration."
+echo  "    info                           Show all information about copycat toolkit."
+echo  "    help                           Show all available copycat toolkit options."
+echo    
 exit
 
 elif [[ "$1" = "host" ]]
@@ -893,8 +893,8 @@ echo  "    domain   <domain>              Show all available information for dom
 echo  "    honeypot <host>                Check whether the IP is a honeypot or not."
 echo  "    stream                         Stream the internet of things in real-time."
 echo  "    radar                          The real-time map of the internet of things."
-echo  "    update                         Update copycat toolkit."
-echo  "    info                           Show copycat credits."
-echo  "    help                           Give this help list."
-echo
+echo  "    update                         Update copycat toolkit and API configuration."
+echo  "    info                           Show all information about copycat toolkit."
+echo  "    help                           Show all available copycat toolkit options."
+echo    
 exit
