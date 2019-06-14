@@ -81,7 +81,7 @@
        host     <host>                Show all available information for an IP.
        download <filename> <request>  Download search results as JSON database.
        parse    <format> <filename>   Extract information out of compressed JSON.
-       explore  <request>             Provide summary information about a search.                 
+       stats    <request>             Provide summary information about a search.                 
        search   <request>             Search the internet of things from copycat.
        domain   <domain>              Show all available information for domain.
        honeypot <host>                Check whether the IP is a honeypot or not.
