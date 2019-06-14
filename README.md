@@ -87,9 +87,9 @@
        honeypot <host>                Check whether the IP is a honeypot or not.
        stream                         Stream the internet of things in real-time.
        radar                          The real-time map of the internet of things.
-       update                         Update copycat toolkit.
-       info                           Show copycat credits.
-       help                           Give this help list.
+       update                         Update copycat toolkit and API configuration.
+       info                           Show all information about copycat toolkit.
+       help                           Show all available copycat toolkit options.
        
  # Copycat examples
  
