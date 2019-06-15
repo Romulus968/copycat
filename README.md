@@ -84,7 +84,7 @@
         parse    <format> <filename>   Extract information out of compressed JSON."
         stats    <request>             Provide summary information about a search."                 
         search   <request>             Search the internet of things from copycat."
-        domain   <domain>              Show all available information for domain."
+        domain   <domain>              Show all available information for a domain."
         stream                         Stream copycat search results in real-time."
         radar                          The real-time map of copycat search results."
         update                         Update copycat toolkit and API configuration."
