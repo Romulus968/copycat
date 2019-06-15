@@ -83,7 +83,7 @@
         download <filename> <request>  Download search results as JSON database."
         parse    <format> <filename>   Extract information out of compressed JSON."
         stats    <request>             Provide summary information about a search."                 
-        search   <request>             Search for internet devices from copycat."
+        search   <request>             Search the internet of things from copycat."
         domain   <domain>              Show all available information for domain."
         stream                         Stream copycat search results in real-time."
         radar                          The real-time map of copycat search results."
