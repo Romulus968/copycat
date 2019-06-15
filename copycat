@@ -143,7 +143,6 @@ shodan init "$SHO"
 } &> /dev/null
 fi
 SAS="$2"
-echo  ""$BS"Please wait..."$CE""
 shodan host "$SAS"
 exit
 
