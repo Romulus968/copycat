@@ -46,11 +46,9 @@
 
 # About copycat toolkit
 
-    INFO: This is a set of tools to view information about hostname, 
-    IP’s or for real-time internet scanning! 
-    Shodan database used in copycat toolkit! 
-    This project developed by Ivan Nikolsky and Anna Fet 
-    (entynetproject organization)
+    INFO: This is a set of tools to view information 
+    about hostname, IP’s or for real-time internet scanning.
+    This project developed by Ivan Nikolsky and Anna Fet!
     
 # How to install copycat
 
