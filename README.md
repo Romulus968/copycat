@@ -48,7 +48,7 @@
 
     INFO: This is a set of tools to view information 
     about hostname, IP’s or for real-time internet scanning.
-    This project developed by Ivan Nikolsky and Anna Fet!
+    This project developed by Ivan Nikolsky and Anna Fet.
     
 # How to install copycat
 
