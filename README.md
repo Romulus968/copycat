@@ -76,18 +76,18 @@
     Usage: copycat [OPTION...] <argument...>
     Copyright (C) 2019, Entynetproject. All Rights Reserved.
  
-        host     <host>                Show all available information for an IP."
-        honeypot <host>                Check whether the IP is a honeypot or not."
-        download <filename> <request>  Download search results as JSON database."
-        parse    <format> <filename>   Extract information out of compressed JSON."
-        stats    <request>             Provide summary information about a search."                 
-        search   <request>             Search the internet of things from copycat."
-        domain   <domain>              Show all available information for a domain."
-        stream                         Stream copycat search results in real-time."
-        radar                          The real-time map of copycat search results."
-        update                         Update copycat toolkit and API configuration."
-        info                           Show all information about copycat toolkit."
-        help                           Show all available copycat toolkit options."
+        host     <host>                Show all available information for an IP.
+        honeypot <host>                Check whether the IP is a honeypot or not.
+        download <filename> <request>  Download search results as JSON database.
+        parse    <format> <filename>   Extract information out of compressed JSON.
+        stats    <request>             Provide summary information about a search.               
+        search   <request>             Search the internet of things from copycat.
+        domain   <domain>              Show all available information for a domain.
+        stream                         Stream copycat search results in real-time.
+        radar                          The real-time map of copycat search results.
+        update                         Update copycat toolkit and API configuration.
+        info                           Show all information about copycat toolkit.
+        help                           Show all available copycat toolkit options.
  
  # Copycat examples
  
