@@ -6,7 +6,7 @@
     | (_| (_) | |_) | |_| | (_| (_| | |_ 
      \___\___/| .__/ \__, |\___\__,_|\__|
               | |     __/ |              
-              |_|    |___/   Art By DJ Mobley           
+              |_|    |___/   Toolkit v1.0           
 
 <p align="center">
   <a href="http://entynetproject.simplesite.com/">
