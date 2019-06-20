@@ -766,7 +766,7 @@ elif [[ "$1" = "info" ]]
 then
 echo
 cd ~/copycat
-cat banner/banner1.txt        
+cat banner/banner.txt        
 echo  
 echo  "   Name      : Copycat Toolkit"
 echo  "   Developer : Entynetproject"
