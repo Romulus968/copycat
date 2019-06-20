@@ -81,13 +81,13 @@
         download <filename> <request>  Download search results as JSON database.
         parse    <format> <filename>   Extract information out of compressed JSON.
         stats    <request>             Provide summary information about a search.               
-        search   <request>             Search the internet of things from copycat.
+        search   <request>             Search the internet of things from Copycat.
         domain   <domain>              Show all available information for a domain.
-        stream                         Stream copycat search results in real-time.
-        radar                          The real-time map of copycat search results.
-        update                         Update copycat toolkit and API configuration.
-        info                           Show all information about copycat toolkit.
-        help                           Show all available copycat toolkit options.
+        stream                         Stream Copycat search results in real-time.
+        radar                          The real-time map of Copycat search results.
+        update                         Update Copycat Toolkit and API configuration.
+        info                           Show all information about Copycat Toolkit.
+        help                           Show all available Copycat Toolkit options.
  
  # Copycat examples
  
