@@ -89,7 +89,7 @@
         info                           Show all information about Copycat Toolkit.
         help                           Show all available Copycat Toolkit options.
  
- # Copycat examples
+ # Copycat toolkit examples
  
 > copycat host 183.63.126.164
  
