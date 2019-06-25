@@ -12,9 +12,6 @@
   <a href="http://entynetproject.simplesite.com/">
     <img src="https://img.shields.io/badge/entynetproject-Ivan%20Nikolsky-blue.svg">
   </a>
-  <a href="http://entynetproject.simplesite.com/">
-      <img src="https://img.shields.io/badge/entynetproject-Anna%20Fet-red.svg">
-  </a> 
   <a href="https://github.com/entynetproject/copycat/releases">
     <img src="https://img.shields.io/github/release/entynetproject/copycat.svg">
   </a>
@@ -47,7 +44,7 @@
 
     INFO: Copycat Toolkit is a set of tools to view information 
     about hostname, IP’s or for real-time internet scanning.
-    This project developed by Ivan Nikolsky and Anna Fet.
+    This project developed by Entynetproject.
     
 # How to install copycat
 
