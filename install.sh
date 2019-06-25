@@ -94,6 +94,39 @@ cat banner/banner.txt
 echo
 sleep 1
 
+read -p $'Select your arch (amd/arm) ' CONF
+sleep 1
+
+if [[ "$CONF" = "arm" ]]
+then
+if [[ -d /System/Library/CoreServices/SpringBoard.app ]]
+then
+echo ""$BS"Installing dependences..."$CE""
+else 
+echo ""$BS"Installing dependences..."$CE""
+pkg update
+pkg install python
+pkg install python-pip
+pkg install python2
+pkg install python2-pip
+fi
+fi
+
+if [[ "$CONF" = "amd" ]]
+then
+if [[ -d /System/Library/CoreServices/Finder.app ]]
+then
+echo ""$BS"Installing dependences..."$CE""
+else
+echo ""$BS"Installing dependences..."$CE""
+apt-get update
+apt-get install python
+apt-get install python-pip
+apt-get install python2
+apt-get install python2-pip
+fi
+fi
+
 if [[ -f /usr/local/bin/shodan ]]
 then
 sleep 0.5
@@ -109,7 +142,6 @@ sleep 0.5
      fi
 else
      sleep 0.5
-     echo  ""$BS"Installing dependences..."$CE""
      {
      pip install shodan
      } &> /dev/null
