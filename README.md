@@ -39,7 +39,7 @@
    
     Name      : Copycat Toolkit 
     Developer : Entynetproject
-    Version   : v1.5 (copycat-1.5-dev)
+    Version   : v1.5 (copycat-v1.5-dev)
     Database  : Shodan (https://shodan.io/)
     Site      : https://entynetproject.simplesite.com/
 
