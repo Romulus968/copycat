@@ -773,7 +773,6 @@ echo  "   Developer : Entynetproject"
 echo  "   Version   : v1.0 (first release)"
 echo  "   Database  : Shodan (https://shodan.io/)"
 echo  "   Site      : https://entynetproject.simplesite.com/"
-echo  "   API       : Automate Shodan API"
 echo
 exit
 
