@@ -770,7 +770,7 @@ cat banner/banner.txt
 echo  
 echo  "   Name      : Copycat Toolkit"
 echo  "   Developer : Entynetproject"
-echo  "   Version   : v1.0 (first release)"
+echo  "   Version   : v1.5 (copycat-1.5-dev)"
 echo  "   Database  : Shodan (https://shodan.io/)"
 echo  "   Site      : https://entynetproject.simplesite.com/"
 echo
