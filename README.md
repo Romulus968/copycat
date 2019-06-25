@@ -42,7 +42,6 @@
     Version   : v1.0 (first release)
     Database  : Shodan (https://shodan.io/)
     Site      : https://entynetproject.simplesite.com/
-    API       : Automate Shodan API
 
 # About copycat toolkit
 
