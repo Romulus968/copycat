@@ -6,7 +6,7 @@
     | (_| (_) | |_) | |_| | (_| (_| | |_ 
      \___\___/| .__/ \__, |\___\__,_|\__|
               | |     __/ |              
-              |_|    |___/   Toolkit v1.0           
+              |_|    |___/   Toolkit v1.5           
 
 <p align="center">
   <a href="http://entynetproject.simplesite.com/">
