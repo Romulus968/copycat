@@ -747,6 +747,7 @@ exit
 
 elif [[ "$1" = "update" ]]
 then
+sleep 1
 echo ""$BS"Installing update..."$CE""
 {
 rm -r ~/copycat
