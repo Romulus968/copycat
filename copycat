@@ -756,10 +756,10 @@ chmod +x uninstall.sh
 ./uninstall.sh
 cd ~
 git clone https://github.com/entynetproject/copycat.git
+} &> /dev/null
 cd copycat
 chmod +x install.sh
 ./install.sh
-} &> /dev/null
 echo ""$GNS"Successfully updated."$CE""
 sleep 1
 exit
