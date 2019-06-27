@@ -94,7 +94,7 @@ cat banner/banner.txt
 echo
 sleep 1
 
-read -p $'Select your arch (amd/arm) ' CONF
+read -p $'Select your arch (amd/intel/arm) ' CONF
 sleep 1
 
 if [[ "$CONF" = "arm" ]]
@@ -113,6 +113,21 @@ fi
 fi
 
 if [[ "$CONF" = "amd" ]]
+then
+if [[ -d /System/Library/CoreServices/Finder.app ]]
+then
+echo ""$BS"Installing dependences..."$CE""
+else
+echo ""$BS"Installing dependences..."$CE""
+apt-get update
+apt-get install python
+apt-get install python-pip
+apt-get install python2
+apt-get install python2-pip
+fi
+fi
+
+if [[ "$CONF" = "intel" ]]
 then
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
