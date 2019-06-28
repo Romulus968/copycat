@@ -110,6 +110,7 @@ echo  "    search   <request>             Search the internet of things from Cop
 echo  "    domain   <domain>              Show all available information for a domain."
 echo  "    stream                         Stream Copycat search results in real-time."
 echo  "    radar                          The real-time map of Copycat search results."
+echo  "    update                         Update Copycat Toolkit and API configuration."
 echo  "    info                           Show all information about Copycat Toolkit."
 echo  "    help                           Show all available Copycat Toolkit options."
 echo    
@@ -891,6 +892,7 @@ echo  "    search   <request>             Search the internet of things from Cop
 echo  "    domain   <domain>              Show all available information for a domain."
 echo  "    stream                         Stream Copycat search results in real-time."
 echo  "    radar                          The real-time map of Copycat search results."
+echo  "    update                         Update Copycat Toolkit and API configuration."
 echo  "    info                           Show all information about Copycat Toolkit."
 echo  "    help                           Show all available Copycat Toolkit options."
 echo    
