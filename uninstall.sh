@@ -58,7 +58,7 @@ echo -e "$RSA"or use"$CE" "$YSA"sudo"$CE"
 sleep 1
 exit
 fi
-	
+sleep 0.5	
 echo
 cd ~/copycat
 cat banner/banner.txt          
