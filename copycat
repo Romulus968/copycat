@@ -744,6 +744,24 @@ fi
 copycat-radar
 exit
 
+elif [[ "$1" = "update" ]]
+then
+echo ""$BS"Installing update..."$CE""
+{
+rm -r ~/copycat
+rm /usr/local/bin/copycat
+rm /usr/local/bin/copycat-radar
+cd ~
+git clone https://github.com/entynetproject/copycat.git
+cd copycat
+chmod +x install.sh
+./install.sh
+} &> /dev/null
+echo ""$GNS"Successfully updated..."$CE""
+sleep 1
+exit
+
+
 elif [[ "$1" = "info" ]]
 then
 echo
