@@ -752,6 +752,8 @@ echo ""$BS"Installing update..."$CE""
 rm -r ~/copycat
 rm /usr/local/bin/copycat
 rm /usr/local/bin/copycat-radar
+rm /bin/copycat
+rm /bin/copycat-radar
 cd ~
 git clone https://github.com/entynetproject/copycat.git
 cd copycat
