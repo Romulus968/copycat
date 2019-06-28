@@ -95,6 +95,9 @@ shodan init "$SHO"
 fi
 sleep 1
 echo
+cd ~/copycat
+cat banner/banner.txt            
+echo
 echo  "Usage: copycat [OPTION...] <argument...>"
 echo  "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo 
