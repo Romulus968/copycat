@@ -42,8 +42,9 @@
 
 # About copycat toolkit
 
-    INFO: Copycat Toolkit is a set of tools to view information 
-    about hostname, IP’s or for real-time internet scanning.
+    INFO: Copycat Toolkit is a set of tools to view 
+    information about hostname, IP’s vulnerabilities, 
+    internet of things or for real-time internet scanning.
     
 # How to install copycat
 
