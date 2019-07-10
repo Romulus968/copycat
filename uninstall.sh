@@ -60,7 +60,7 @@ exit
 fi
 sleep 0.5	
 echo
-cd ~/copycat
+cd /etc/copycat
 cat banner/banner.txt          
 echo 
 sleep 0.5
@@ -71,12 +71,12 @@ rm /usr/local/bin/copycat
 rm /usr/local/bin/copycat-radar
 rm /bin/copycat
 rm /bin/copycat-radar
-rm -r ~/copycat
+rm -r /etc/copycat
 } &> /dev/null
 sleep 1
 echo  ""$RS"Uninstalling installed dependencies..."$CE""
 sleep 1
-cd ~
+cd 
 {
 pip uninstall -y shodan
 } &> /dev/null
