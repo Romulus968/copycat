@@ -61,7 +61,7 @@ fi
 
 if [[ -d /etc/copycat ]]
 then
-cd  /etc/copycat
+cd /etc/copycat/bin
 {
 cp copycat /usr/local/bin
 chmod +x /usr/local/bin/copycat
@@ -76,7 +76,7 @@ else
 cd /etc
 {
 git clone https://github.com/entynetproject/copycat.git
-cd  /etc/copycat
+cd /etc/copycat/bin
 cp copycat /usr/local/bin
 chmod +x /usr/local/bin/copycat
 cp copycat-radar /usr/local/bin
