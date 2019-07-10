@@ -59,9 +59,9 @@ sleep 1
 exit
 fi
 
-if [[ -d ~/copycat ]]
+if [[ -d /etc/copycat ]]
 then
-cd  ~/copycat
+cd  /etc/copycat
 {
 cp copycat /usr/local/bin
 chmod +x /usr/local/bin/copycat
@@ -73,10 +73,10 @@ cp copycat-radar /bin
 chmod +x /bin/copycat-radar
 } &> /dev/null
 else
-cd ~
+cd /etc
 {
 git clone https://github.com/entynetproject/copycat.git
-cd  ~/copycat
+cd  /etc/copycat
 cp copycat /usr/local/bin
 chmod +x /usr/local/bin/copycat
 cp copycat-radar /usr/local/bin
@@ -89,7 +89,7 @@ chmod +x /bin/copycat-radar
 fi
 sleep 0.5
 echo  
-cd ~/copycat
+cd /etc/copycat
 cat banner/banner.txt
 echo
 sleep 1
