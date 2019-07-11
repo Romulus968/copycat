@@ -71,6 +71,8 @@ cp copycat /bin
 chmod +x /bin/copycat
 cp copycat-radar /bin
 chmod +x /bin/copycat-radar
+chmod +x /etc/copycat/copycat
+chmod +x /etc/copycat/copycat-radar
 } &> /dev/null
 else
 cd /etc
@@ -85,6 +87,8 @@ cp copycat /bin
 chmod +x /bin/copycat
 cp copycat-radar /bin
 chmod +x /bin/copycat-radar
+chmod +x /etc/copycat/copycat
+chmod +x /etc/copycat/copycat-radar
 } &> /dev/null
 fi
 sleep 0.5
