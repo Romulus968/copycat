@@ -59,9 +59,9 @@ sleep 1
 exit
 fi
 
-if [[ -d /etc/copycat ]]
+if [[ -d ~/copycat ]]
 then
-cd /etc/copycat/bin
+cd ~/copycat/bin
 {
 cp copycat /usr/local/bin
 chmod +x /usr/local/bin/copycat
@@ -71,14 +71,14 @@ cp copycat /bin
 chmod +x /bin/copycat
 cp copycat-radar /bin
 chmod +x /bin/copycat-radar
-chmod +x /etc/copycat/copycat
-chmod +x /etc/copycat/copycat-radar
+chmod +x ~/copycat/copycat
+chmod +x ~/copycat/copycat-radar
 } &> /dev/null
 else
-cd /etc
+cd ~
 {
 git clone https://github.com/entynetproject/copycat.git
-cd /etc/copycat/bin
+cd ~/copycat/bin
 cp copycat /usr/local/bin
 chmod +x /usr/local/bin/copycat
 cp copycat-radar /usr/local/bin
@@ -87,21 +87,21 @@ cp copycat /bin
 chmod +x /bin/copycat
 cp copycat-radar /bin
 chmod +x /bin/copycat-radar
-chmod +x /etc/copycat/copycat
-chmod +x /etc/copycat/copycat-radar
+chmod +x ~/copycat/copycat
+chmod +x ~/copycat/copycat-radar
 } &> /dev/null
 fi
 sleep 0.5
 echo  
-cd /etc/copycat
+cd ~/copycat
 cat banner/banner.txt
 echo
 sleep 1
 
-if [[ -f /etc/copycat.d ]]
+if [[ -f ~/copycat.d ]]
 then
 
-CONF="$( cat /etc/copycat.d )"
+CONF="$( cat ~/copycat.d )"
 
 if [[ "$CONF" = "arm" ]]
 then
@@ -150,7 +150,7 @@ fi
 
 else
 read -p $'Select your architecture (amd/intel/arm) ' CONF
-echo "$CONF" >> /etc/copycat.d
+echo "$CONF" >> ~/copycat.d
 sleep 1
 
 if [[ "$CONF" = "arm" ]]

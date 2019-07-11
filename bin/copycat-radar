@@ -49,10 +49,10 @@ then
 sleep 1
 echo ""$BS"Installing update..."$CE""
 {
-rm -r /etc/copycat
+rm -r ~/copycat
 rm /bin/copycat
 rm /usr/local/bin/copycat
-cd /etc
+cd ~
 git clone https://github.com/entynetproject/copycat.git
 cd copycat
 chmod +x install.sh
@@ -63,27 +63,27 @@ sleep 1
 exit
 fi
 
-cd /etc
-if [[ -d /etc/copycat ]]
+cd ~
+if [[ -d ~/copycat ]]
 then
 {
-cd /etc/copycat
+cd ~/copycat
 } &> /dev/null
-python /etc/copycat/copycat-radar
+python ~/copycat/copycat-radar
 else
 {
 ASESR="$( timeout -s SIGTERM 40 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
 } &> /dev/null
 if [[ "$ASESR" != "" ]]
 then 
-cd /etc
+cd ~
 {
 git clone https://github.com/entynetproject/copycat.git
-cd /etc/copycat
+cd ~/copycat
 } &> /dev/null
-python /etc/copycat/copycat-radar
+python ~/copycat/copycat-radar
 else
-cd /etc
+cd ~
 sleep 1
 exit
 fi

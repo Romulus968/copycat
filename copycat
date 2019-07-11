@@ -43,19 +43,19 @@ else
 	GNS="-e \e[0;32m"
 fi
 
-cd /etc/copycat
+cd ~/copycat
 
-if [[ -d /etc/copycat ]]
+if [[ -d ~/copycat ]]
 then
-cd /etc
+cd ~
 sleep 0.5
-cd /etc/copycat
+cd ~/copycat
 else
-cd /etc
+cd ~
 {
 git clone https://github.com/entynetproject/copycat.git
 } &> /dev/null
-cd /etc/copycat
+cd ~/copycat
 fi
 
 {
@@ -97,7 +97,7 @@ shodan init "$SHO"
 fi
 sleep 1
 echo
-cd /etc/copycat
+cd ~/copycat
 cat banner/banner.txt            
 echo
 echo  "Usage: copycat [OPTION...] <argument...>"
@@ -751,12 +751,12 @@ elif [[ "$1" = "update" ]]
 then
 echo ""$BS"Installing update..."$CE""
 {
-rm -r /etc/copycat
+rm -r ~/copycat
 rm /usr/local/bin/copycat
 rm /usr/local/bin/copycat-radar
 rm /bin/copycat
 rm /bin/copycat-radar
-cd /etc
+cd ~
 git clone https://github.com/entynetproject/copycat.git
 cd copycat
 chmod +x install.sh
@@ -770,7 +770,7 @@ exit
 elif [[ "$1" = "info" ]]
 then
 echo
-cd /etc/copycat
+cd ~/copycat
 cat banner/banner.txt        
 echo  
 echo  "   Name      : Copycat Toolkit"
@@ -881,7 +881,7 @@ fi
 
 sleep 1
 echo
-cd /etc/copycat
+cd ~/copycat
 cat banner/banner.txt           
 echo 
 echo  "Usage: copycat [OPTION...] <argument...>"
