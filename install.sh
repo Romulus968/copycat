@@ -98,10 +98,10 @@ cat banner/banner.txt
 echo
 sleep 1
 
-if [[ -f ~/copycat.d ]]
+if [[ -f /etc/copycat.d ]]
 then
 
-CONF="$( cat ~/copycat.d )"
+CONF="$( cat /etc/copycat.d )"
 
 if [[ "$CONF" = "arm" ]]
 then
@@ -150,7 +150,7 @@ fi
 
 else
 read -p $'Select your architecture (amd/intel/arm) ' CONF
-echo "$CONF" >> ~/copycat.d
+echo "$CONF" >> /etc/copycat.d
 sleep 1
 
 if [[ "$CONF" = "arm" ]]
