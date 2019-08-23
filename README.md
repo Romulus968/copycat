@@ -69,7 +69,7 @@
 
 > copycat help
 
-    Usage: copycat [OPTION...] <argument>
+    Usage: copycat [OPTION...] <argument...>
     Copyright (C) 2019, Entynetproject. All Rights Reserved.
  
         host     <host>                Show all available information for an IP.
